@@ -2,141 +2,186 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Caprichos</title>
 
-    <title>Radio Caprichos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.9)),
+        radial-gradient(circle at top, #2a1b10, #050505 65%);
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-        body {
-            min-height: 100vh;
-            background: radial-gradient(circle at top, #1c1c1c, #050505);
-            color: #f5f5f5;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    header {
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        main {
-            max-width: 1000px;
-            padding: 40px;
-        }
+    .brand {
+      color: #d4af37;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
 
-        .logo {
-            font-size: 90px;
-            margin-bottom: 20px;
-        }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+    }
 
-        h1 {
-            font-size: 72px;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-        }
+    .hero {
+      min-height: calc(100vh - 90px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 8%;
+    }
 
-        h2 {
-            color: #d4af37;
-            font-size: 28px;
-            font-weight: normal;
-            margin-bottom: 40px;
-        }
+    .condor {
+      font-size: 78px;
+      margin-bottom: 25px;
+    }
 
-        p {
-            font-size: 22px;
-            line-height: 1.8;
-            color: #d8d8d8;
-            max-width: 800px;
-            margin: auto;
-        }
+    h1 {
+      font-size: clamp(44px, 8vw, 86px);
+      letter-spacing: 6px;
+      line-height: 1;
+    }
 
-        .second-text {
-            margin-top: 25px;
-            margin-bottom: 40px;
-        }
+    h1 span {
+      color: #c8102e;
+    }
 
-        .btn {
-            display: inline-block;
-            text-decoration: none;
-            background: #c8102e;
-            color: white;
-            padding: 18px 40px;
-            border-radius: 40px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    h2 {
+      margin-top: 22px;
+      color: #d4af37;
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: normal;
+    }
 
-        .btn:hover {
-            background: #d4af37;
-            color: #050505;
-        }
+    .baseline {
+      margin: 35px auto 0;
+      max-width: 720px;
+      font-size: 22px;
+      line-height: 1.7;
+      color: #e0e0e0;
+    }
 
-        footer {
-            margin-top: 60px;
-            color: #777;
-            font-size: 14px;
-        }
+    .identity {
+      margin-top: 34px;
+      font-size: 20px;
+      letter-spacing: 4px;
+      color: #fff;
+    }
 
-        @media(max-width:768px) {
+    .identity span {
+      color: #d4af37;
+    }
 
-            h1 {
-                font-size: 42px;
-            }
+    .buttons {
+      margin-top: 45px;
+    }
 
-            h2 {
-                font-size: 20px;
-            }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 16px 34px;
+      border-radius: 40px;
+      font-weight: bold;
+      margin: 8px;
+    }
 
-            p {
-                font-size: 18px;
-            }
+    .btn-primary {
+      background: #c8102e;
+      color: white;
+    }
 
-            .logo {
-                font-size: 60px;
-            }
-        }
-    </style>
+    .btn-secondary {
+      border: 1px solid #d4af37;
+      color: #d4af37;
+    }
 
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media(max-width: 700px) {
+      header {
+        display: block;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .identity {
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <main>
+  <header>
+    <div class="brand">RADIO CAPRICHOS</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Histoire</a>
+      <a href="#">Communauté</a>
+    </nav>
+  </header>
 
-        <div class="logo">🦅📻</div>
+  <section class="hero">
+    <div>
+      <div class="condor">🦅</div>
 
-        <h1>RADIO CAPRICHOS</h1>
+      <h1>RADIO <span>CAPRICHOS</span></h1>
 
-        <h2>Des Andes du Pérou aux Landes de France</h2>
+      <h2>Des Andes du Pérou aux Landes de France</h2>
 
-        <p>
-            Née dans une chambre à Villa El Salvador à la fin de l'année 2008,
-            Radio Caprichos est née d'une passion pour la musique,
-            Internet et l'amitié.
-        </p>
+      <p class="baseline">
+        Née dans une chambre à Villa El Salvador en 2008,
+        Radio Caprichos renaît aujourd’hui depuis les Landes de France.
+      </p>
 
-        <p class="second-text">
-            Aujourd'hui, depuis les Landes de France,
-            nous faisons renaître cette aventure qui a connecté des milliers
-            de souvenirs, de voix et de rencontres à travers le monde.
-        </p>
+      <div class="identity">
+        UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.
+      </div>
 
-        <a href="#" class="btn">
-            Écouter bientôt
-        </a>
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">Découvrir notre histoire</a>
+        <a href="#" class="btn btn-secondary">Écouter bientôt</a>
+      </div>
+    </div>
+  </section>
 
-        <footer>
-            © 2008 - 2026 Radio Caprichos
-        </footer>
-
-    </main>
+  <footer>
+    © 2008 - 2026 Radio Caprichos
+  </footer>
 
 </body>
 
