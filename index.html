@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radio Caprichos</title>
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
-      background: radial-gradient(circle at top, #2a1b10, #050505 65%);
+      background: radial-gradient(circle at top, #24150d, #050505 65%);
       color: #f5f5f5;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
     }
 
     header {
-      padding: 28px 8%;
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -23,77 +25,65 @@
     .brand {
       color: #d4af37;
       font-weight: bold;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
 
     nav a {
-      color: #ddd;
+      color: white;
       text-decoration: none;
-      margin-left: 18px;
+      margin-left: 24px;
       font-size: 14px;
     }
 
     .hero {
-      min-height: 85vh;
+      min-height: 92vh;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       padding: 40px 8%;
     }
 
     .condor {
-      font-size: 78px;
+      font-size: 70px;
       margin-bottom: 25px;
     }
 
     h1 {
-      font-size: clamp(44px, 8vw, 86px);
-      letter-spacing: 6px;
-      margin: 0;
+      font-size: clamp(48px, 8vw, 86px);
+      letter-spacing: 7px;
+      margin-bottom: 25px;
     }
 
-    h1 span {
-      color: #c8102e;
-    }
+    h1 span { color: #c8102e; }
 
-    .fr {
+    .slogan-fr {
       color: #d4af37;
-      font-size: clamp(22px, 3vw, 34px);
-      margin-top: 20px;
+      font-size: clamp(24px, 3vw, 34px);
+      margin-bottom: 12px;
     }
 
-    .es {
-      color: #ffffff;
-      font-size: clamp(18px, 2.4vw, 26px);
-      margin-top: 10px;
+    .slogan-es {
+      color: white;
+      font-size: clamp(19px, 2.4vw, 26px);
+      margin-bottom: 40px;
     }
 
-    .baseline {
-      margin: 35px auto 0;
-      max-width: 760px;
-      font-size: 22px;
+    .text {
+      max-width: 820px;
+      margin: 18px auto;
+      font-size: 21px;
       line-height: 1.7;
-      color: #e0e0e0;
-    }
-
-    .baseline-es {
-      margin: 20px auto 0;
-      max-width: 760px;
-      font-size: 20px;
-      line-height: 1.7;
-      color: #cfcfcf;
+      color: #eeeeee;
     }
 
     .identity {
-      margin-top: 34px;
-      font-size: 20px;
-      letter-spacing: 4px;
-      color: #fff;
+      margin-top: 35px;
+      font-size: 21px;
+      letter-spacing: 5px;
+      color: white;
     }
 
-    .identity span {
-      color: #d4af37;
-    }
+    .identity span { color: #d4af37; }
 
     .buttons {
       margin-top: 45px;
@@ -118,10 +108,65 @@
       color: #d4af37;
     }
 
+    .history {
+      padding: 90px 8%;
+      background: #080808;
+      border-top: 1px solid rgba(212,175,55,0.25);
+    }
+
+    .section-title {
+      color: #d4af37;
+      font-size: 34px;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 55px;
+    }
+
+    .timeline {
+      max-width: 950px;
+      margin: auto;
+      display: grid;
+      gap: 28px;
+    }
+
+    .card {
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 18px;
+      padding: 30px;
+      text-align: left;
+      background: linear-gradient(145deg, #101010, #070707);
+    }
+
+    .year {
+      color: #c8102e;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #d4af37;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #ddd;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
     footer {
-      padding: 25px;
-      font-size: 13px;
+      padding: 30px;
       color: #777;
+      font-size: 13px;
+      background: #050505;
     }
 
     @media(max-width: 700px) {
@@ -130,16 +175,24 @@
       }
 
       nav {
-        margin-top: 15px;
+        margin-top: 16px;
       }
 
       nav a {
         margin: 0 8px;
       }
 
+      h1 {
+        letter-spacing: 3px;
+      }
+
       .identity {
         font-size: 15px;
         letter-spacing: 2px;
+      }
+
+      .text {
+        font-size: 18px;
       }
     }
   </style>
@@ -150,28 +203,28 @@
   <header>
     <div class="brand">RADIO CAPRICHOS</div>
     <nav>
-      <a href="#">FR</a>
-      <a href="#">ES</a>
-      <a href="#">Histoire</a>
-      <a href="#">Historia</a>
+      <a href="#accueil">FR</a>
+      <a href="#inicio">ES</a>
+      <a href="#histoire">Histoire</a>
+      <a href="#historia">Historia</a>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="accueil">
     <div>
       <div class="condor">🦅</div>
 
       <h1>RADIO <span>CAPRICHOS</span></h1>
 
-      <div class="fr">Des Andes du Pérou aux Landes de France</div>
-      <div class="es">De los Andes del Perú a las Landas de Francia</div>
+      <div class="slogan-fr">Des Andes du Pérou aux Landes de France</div>
+      <div class="slogan-es">De los Andes del Perú a las Landas de Francia</div>
 
-      <p class="baseline">
+      <p class="text">
         Née dans une chambre à Villa El Salvador en 2008,
         Radio Caprichos renaît aujourd’hui depuis les Landes de France.
       </p>
 
-      <p class="baseline-es">
+      <p class="text">
         Nacida en una habitación de Villa El Salvador en 2008,
         Radio Caprichos renace hoy desde las Landas de Francia.
       </p>
@@ -185,9 +238,73 @@
       </div>
 
       <div class="buttons">
-        <a href="#" class="btn btn-primary">Découvrir l’histoire</a>
-        <a href="#" class="btn btn-secondary">Descubrir la historia</a>
+        <a href="#histoire" class="btn btn-primary">Découvrir l’histoire</a>
+        <a href="#historia" class="btn btn-secondary">Descubrir la historia</a>
       </div>
+    </div>
+  </section>
+
+  <section class="history" id="histoire">
+    <h2 class="section-title">NOTRE HISTOIRE</h2>
+    <div class="section-subtitle">NUESTRA HISTORIA</div>
+
+    <div class="timeline">
+
+      <div class="card">
+        <div class="year">2008</div>
+        <h3>Villa El Salvador</h3>
+        <p>
+          Radio Caprichos est née dans une chambre à Villa El Salvador, au Pérou,
+          à une époque où les jeunes découvraient le streaming, les chats en ligne
+          et les premières radios Internet.
+        </p>
+        <p>
+          Radio Caprichos nació en una habitación de Villa El Salvador, Perú,
+          en una época donde muchos jóvenes descubrían el streaming, los chats
+          y las primeras radios por Internet.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="year">2009</div>
+        <h3>L’époque xat.com / La época xat.com</h3>
+        <p>
+          Le chat et la radio formaient une seule communauté. Les auditeurs
+          demandaient des chansons, envoyaient des salutations et partageaient
+          des nuits entières avec les DJs.
+        </p>
+        <p>
+          El chat y la radio formaban una sola comunidad. Los oyentes pedían
+          canciones, mandaban saludos y compartían noches enteras con los DJs.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="year">2010</div>
+        <h3>Une communauté / Una comunidad</h3>
+        <p>
+          Radio Caprichos a grandi avec ses amis, ses locuteurs, ses mixes,
+          ses rencontres et cette énergie unique des premières communautés latines en ligne.
+        </p>
+        <p>
+          Radio Caprichos creció con sus amigos, locutores, mixes, encuentros
+          y esa energía única de las primeras comunidades latinas en Internet.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="year">2026</div>
+        <h3>Le retour / El regreso</h3>
+        <p>
+          Aujourd’hui, Radio Caprichos renaît depuis les Landes de France,
+          avec la même passion : la musique, l’amitié et la communauté.
+        </p>
+        <p>
+          Hoy, Radio Caprichos renace desde las Landas de Francia,
+          con la misma pasión: la música, la amistad y la comunidad.
+        </p>
+      </div>
+
     </div>
   </section>
 
