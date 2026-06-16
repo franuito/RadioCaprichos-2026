@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radio Caprichos</title>
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      min-height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.9)),
-        radial-gradient(circle at top, #2a1b10, #050505 65%);
+      margin: 0;
+      background: radial-gradient(circle at top, #2a1b10, #050505 65%);
       color: #f5f5f5;
       font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
     }
 
     header {
@@ -38,16 +29,15 @@
     nav a {
       color: #ddd;
       text-decoration: none;
-      margin-left: 25px;
+      margin-left: 18px;
       font-size: 14px;
     }
 
     .hero {
-      min-height: calc(100vh - 90px);
+      min-height: 85vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
       padding: 40px 8%;
     }
 
@@ -59,26 +49,39 @@
     h1 {
       font-size: clamp(44px, 8vw, 86px);
       letter-spacing: 6px;
-      line-height: 1;
+      margin: 0;
     }
 
     h1 span {
       color: #c8102e;
     }
 
-    h2 {
-      margin-top: 22px;
+    .fr {
       color: #d4af37;
       font-size: clamp(22px, 3vw, 34px);
-      font-weight: normal;
+      margin-top: 20px;
+    }
+
+    .es {
+      color: #ffffff;
+      font-size: clamp(18px, 2.4vw, 26px);
+      margin-top: 10px;
     }
 
     .baseline {
       margin: 35px auto 0;
-      max-width: 720px;
+      max-width: 760px;
       font-size: 22px;
       line-height: 1.7;
       color: #e0e0e0;
+    }
+
+    .baseline-es {
+      margin: 20px auto 0;
+      max-width: 760px;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #cfcfcf;
     }
 
     .identity {
@@ -116,7 +119,6 @@
     }
 
     footer {
-      text-align: center;
       padding: 25px;
       font-size: 13px;
       color: #777;
@@ -125,7 +127,6 @@
     @media(max-width: 700px) {
       header {
         display: block;
-        text-align: center;
       }
 
       nav {
@@ -149,9 +150,10 @@
   <header>
     <div class="brand">RADIO CAPRICHOS</div>
     <nav>
-      <a href="#">Accueil</a>
+      <a href="#">FR</a>
+      <a href="#">ES</a>
       <a href="#">Histoire</a>
-      <a href="#">Communauté</a>
+      <a href="#">Historia</a>
     </nav>
   </header>
 
@@ -161,20 +163,30 @@
 
       <h1>RADIO <span>CAPRICHOS</span></h1>
 
-      <h2>Des Andes du Pérou aux Landes de France</h2>
+      <div class="fr">Des Andes du Pérou aux Landes de France</div>
+      <div class="es">De los Andes del Perú a las Landas de Francia</div>
 
       <p class="baseline">
         Née dans une chambre à Villa El Salvador en 2008,
         Radio Caprichos renaît aujourd’hui depuis les Landes de France.
       </p>
 
+      <p class="baseline-es">
+        Nacida en una habitación de Villa El Salvador en 2008,
+        Radio Caprichos renace hoy desde las Landas de Francia.
+      </p>
+
       <div class="identity">
         UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.
       </div>
 
+      <div class="identity">
+        UNA RADIO. <span>UNA COMUNIDAD.</span> UNA FAMILIA.
+      </div>
+
       <div class="buttons">
-        <a href="#" class="btn btn-primary">Découvrir notre histoire</a>
-        <a href="#" class="btn btn-secondary">Écouter bientôt</a>
+        <a href="#" class="btn btn-primary">Découvrir l’histoire</a>
+        <a href="#" class="btn btn-secondary">Descubrir la historia</a>
       </div>
     </div>
   </section>
@@ -184,5 +196,4 @@
   </footer>
 
 </body>
-
 </html>
