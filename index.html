@@ -20,6 +20,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: rgba(0,0,0,0.35);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     .brand {
@@ -31,9 +35,11 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 24px;
+      margin-left: 22px;
       font-size: 14px;
     }
+
+    nav a:hover { color: #d4af37; }
 
     .hero {
       min-height: 92vh;
@@ -85,9 +91,7 @@
 
     .identity span { color: #d4af37; }
 
-    .buttons {
-      margin-top: 45px;
-    }
+    .buttons { margin-top: 45px; }
 
     .btn {
       display: inline-block;
@@ -108,10 +112,13 @@
       color: #d4af37;
     }
 
-    .history {
+    section {
       padding: 90px 8%;
+      border-top: 1px solid rgba(212,175,55,0.20);
+    }
+
+    .dark-section {
       background: #080808;
-      border-top: 1px solid rgba(212,175,55,0.25);
     }
 
     .section-title {
@@ -128,7 +135,7 @@
     }
 
     .timeline {
-      max-width: 950px;
+      max-width: 1000px;
       margin: auto;
       display: grid;
       gap: 28px;
@@ -162,6 +169,42 @@
       margin-bottom: 12px;
     }
 
+    .grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .mini-card {
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 18px;
+      padding: 28px;
+      background: linear-gradient(145deg, #101010, #070707);
+    }
+
+    .mini-card h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .mini-card p {
+      color: #ddd;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .contact-box {
+      max-width: 760px;
+      margin: auto;
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 18px;
+      padding: 35px;
+      background: linear-gradient(145deg, #101010, #070707);
+    }
+
     footer {
       padding: 30px;
       color: #777;
@@ -179,7 +222,8 @@
       }
 
       nav a {
-        margin: 0 8px;
+        margin: 0 7px;
+        font-size: 13px;
       }
 
       h1 {
@@ -203,10 +247,11 @@
   <header>
     <div class="brand">RADIO CAPRICHOS</div>
     <nav>
-      <a href="#accueil">FR</a>
-      <a href="#inicio">ES</a>
+      <a href="#accueil">Accueil</a>
       <a href="#histoire">Histoire</a>
-      <a href="#historia">Historia</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#communaute">Communauté</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -239,12 +284,12 @@
 
       <div class="buttons">
         <a href="#histoire" class="btn btn-primary">Découvrir l’histoire</a>
-        <a href="#historia" class="btn btn-secondary">Descubrir la historia</a>
+        <a href="#galerie" class="btn btn-secondary">Voir les souvenirs</a>
       </div>
     </div>
   </section>
 
-  <section class="history" id="histoire">
+  <section class="dark-section" id="histoire">
     <h2 class="section-title">NOTRE HISTOIRE</h2>
     <div class="section-subtitle">NUESTRA HISTORIA</div>
 
@@ -305,6 +350,76 @@
         </p>
       </div>
 
+    </div>
+  </section>
+
+  <section id="galerie">
+    <h2 class="section-title">GALERIE</h2>
+    <div class="section-subtitle">GALERÍA</div>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>📻 Les débuts / Los inicios</h3>
+        <p>
+          000webhost, .tk, .com.ar, 6te.net, xat.com, Ares, eMule,
+          Winamp, SAM Broadcaster et beaucoup de passion.
+        </p>
+      </div>
+
+      <div class="mini-card">
+        <h3>🎧 Les DJs / Los DJs</h3>
+        <p>
+          Des jeunes passionnés qui apprenaient à mixer, parler au micro,
+          animer un chat et créer une ambiance unique.
+        </p>
+      </div>
+
+      <div class="mini-card">
+        <h3>💬 Le chat / El chat</h3>
+        <p>
+          Des salutations, des demandes de chansons, des amitiés virtuelles
+          et des nuits entières sans dormir.
+        </p>
+      </div>
+
+      <div class="mini-card">
+        <h3>🌎 Le retour / El regreso</h3>
+        <p>
+          Une nouvelle étape depuis les Landes de France,
+          entre mémoire, musique et communauté.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="communaute">
+    <h2 class="section-title">COMMUNAUTÉ</h2>
+    <div class="section-subtitle">COMUNIDAD</div>
+
+    <div class="contact-box">
+      <p class="text">
+        Radio Caprichos n’a jamais été seulement une radio.
+        C’était un lieu de rencontres, de musique, de souvenirs et d’amitié.
+      </p>
+
+      <p class="text">
+        Radio Caprichos nunca fue solamente una radio.
+        Fue un lugar de encuentros, música, recuerdos y amistad.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">CONTACT</h2>
+    <div class="section-subtitle">CONTACTO</div>
+
+    <div class="contact-box">
+      <p class="text">
+        Le retour de Radio Caprichos est en construction.
+      </p>
+      <p class="text">
+        El regreso de Radio Caprichos está en construcción.
+      </p>
     </div>
   </section>
 
