@@ -1,296 +1,350 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Caprichos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radio Caprichos</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:radial-gradient(circle at top,#24150d,#050505 65%);
+  color:#f5f5f5;
+  font-family:Arial,Helvetica,sans-serif;
+  text-align:center;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 8%;
+  background:rgba(0,0,0,.45);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.brand{
+  color:#d4af37;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+
+nav a:hover{color:#d4af37}
+
+.lang button{
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+  margin-left:8px;
+}
+
+.lang button.active{
+  color:#d4af37;
+  font-weight:bold;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px 8%;
+}
+
+.condor{
+  font-size:70px;
+  margin-bottom:25px;
+}
+
+h1{
+  font-size:clamp(52px,8vw,100px);
+  letter-spacing:6px;
+  margin-bottom:25px;
+}
+
+h1 span{color:#c8102e}
+
+.slogan{
+  color:#d4af37;
+  font-size:clamp(24px,3vw,36px);
+  margin-bottom:35px;
+}
+
+.text{
+  max-width:850px;
+  margin:20px auto;
+  font-size:22px;
+  line-height:1.7;
+}
+
+.identity{
+  margin-top:35px;
+  font-size:22px;
+  letter-spacing:4px;
+}
+
+.identity span{color:#d4af37}
+
+.buttons{margin-top:42px}
+
+.btn{
+  display:inline-block;
+  padding:16px 34px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:8px;
+}
+
+.btn-primary{
+  background:#c8102e;
+  color:white;
+}
+
+.btn-secondary{
+  border:2px solid #d4af37;
+  color:#d4af37;
+}
+
+.dark-section{
+  padding:100px 8%;
+  background:#080808;
+  border-top:1px solid rgba(212,175,55,.25);
+}
+
+.section-title{
+  color:#d4af37;
+  font-size:40px;
+  letter-spacing:4px;
+  margin-bottom:15px;
+}
+
+.section-subtitle{
+  font-size:24px;
+  margin-bottom:50px;
+}
+
+.timeline{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  gap:30px;
+}
+
+.card{
+  background:linear-gradient(145deg,#101010,#070707);
+  border:1px solid rgba(212,175,55,.25);
+  border-radius:20px;
+  padding:35px;
+  text-align:left;
+}
+
+.year{
+  color:#c8102e;
+  font-weight:bold;
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  color:#d4af37;
+  font-size:26px;
+  margin-bottom:15px;
+}
+
+.card p{
+  font-size:18px;
+  line-height:1.8;
+  color:#ddd;
+}
+
+footer{
+  padding:35px;
+  color:#777;
+  background:#050505;
+}
+
+@media(max-width:800px){
+  header{flex-direction:column;gap:18px}
+  nav{flex-wrap:wrap;justify-content:center}
+  h1{font-size:48px}
+  .text{font-size:18px}
+  .identity{font-size:16px;letter-spacing:2px}
+}
+</style>
 </head>
 
 <body>
 
 <header>
+  <div class="brand">RADIO CAPRICHOS</div>
 
-    <div class="brand">
-        RADIO CAPRICHOS
-    </div>
+  <nav>
+    <a href="index.html" data-i18n="navHome">Accueil</a>
+    <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
+    <a href="galerie.html" data-i18n="navGallery">Galerie</a>
+    <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
+    <a href="contact.html" data-i18n="navContact">Contact</a>
 
-    <nav>
-
-        <a href="index.html" data-i18n="navHome">Accueil</a>
-
-        <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
-
-        <a href="galerie.html" data-i18n="navGallery">Galerie</a>
-
-        <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
-
-        <a href="contact.html" data-i18n="navContact">Contact</a>
-
-        <span class="lang">
-
-            <button onclick="setLang('fr')" id="btn-fr" class="active">
-                FR
-            </button>
-
-            <button onclick="setLang('es')" id="btn-es">
-                ES
-            </button>
-
-        </span>
-
-    </nav>
-
+    <span class="lang">
+      <button onclick="setLang('fr')" id="btn-fr" class="active">FR</button>
+      <button onclick="setLang('es')" id="btn-es">ES</button>
+    </span>
+  </nav>
 </header>
 
 <section class="hero">
+  <div>
+    <div class="condor">🦅</div>
 
-    <div>
+    <h1>RADIO <span>CAPRICHOS</span></h1>
 
-        <div class="condor">
-            🦅
-        </div>
-
-        <h1>
-            RADIO <span>CAPRICHOS</span>
-        </h1>
-
-        <div class="slogan" data-i18n="slogan">
-            Des Andes du Pérou aux Landes de France
-        </div>
-
-        <p class="text" data-i18n="intro">
-            Née dans une chambre à Villa El Salvador en 2008,
-            Radio Caprichos renaît aujourd’hui depuis les Landes de France.
-        </p>
-
-        <div class="identity" data-i18n-html="identity">
-            UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.
-        </div>
-
-        <div class="buttons">
-
-            <a href="pionniers.html"
-               class="btn btn-primary"
-               data-i18n="btnHistory">
-               Découvrir l'histoire
-            </a>
-
-            <a href="galerie.html"
-               class="btn btn-secondary"
-               data-i18n="btnGallery">
-               Voir la galerie
-            </a>
-
-        </div>
-
+    <div class="slogan" data-i18n="slogan">
+      Des Andes du Pérou aux Landes de France
     </div>
 
+    <p class="text" data-i18n="intro">
+      Née dans une chambre à Villa El Salvador en 2008,
+      Radio Caprichos renaît aujourd’hui depuis les Landes de France.
+    </p>
+
+    <div class="identity" data-i18n-html="identity">
+      UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.
+    </div>
+
+    <div class="buttons">
+      <a href="pionniers.html" class="btn btn-primary" data-i18n="btnHistory">
+        Découvrir l'histoire
+      </a>
+
+      <a href="galerie.html" class="btn btn-secondary" data-i18n="btnGallery">
+        Voir la galerie
+      </a>
+    </div>
+  </div>
 </section>
 
 <section class="dark-section">
+  <h2 class="section-title" data-i18n="historyTitle">NOTRE HISTOIRE</h2>
+  <div class="section-subtitle" data-i18n="historySubtitle">
+    Une aventure née sur Internet
+  </div>
 
-    <h2 class="section-title" data-i18n="historyTitle">
-        NOTRE HISTOIRE
-    </h2>
+  <div class="timeline">
 
-    <div class="section-subtitle" data-i18n="historySubtitle">
-        Une aventure née sur Internet
+    <div class="card">
+      <div class="year">2008</div>
+      <h3 data-i18n="card1Title">Villa El Salvador</h3>
+      <p data-i18n="card1Text">
+        Radio Caprichos est née dans une chambre à Villa El Salvador,
+        au Pérou, à une époque où les jeunes découvraient le streaming,
+        les chats en ligne et les premières radios Internet.
+      </p>
     </div>
 
-    <div class="timeline">
-
-        <div class="card">
-
-            <div class="year">
-                2008
-            </div>
-
-            <h3 data-i18n="card1Title">
-                Villa El Salvador
-            </h3>
-
-            <p data-i18n="card1Text">
-                Radio Caprichos est née dans une chambre à Villa El Salvador,
-                au Pérou, à une époque où les jeunes découvraient le streaming,
-                les chats en ligne et les premières radios Internet.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="year">
-                2009
-            </div>
-
-            <h3 data-i18n="card2Title">
-                L’époque xat.com
-            </h3>
-
-            <p data-i18n="card2Text">
-                Le chat et la radio formaient une seule communauté.
-                Les auditeurs demandaient des chansons,
-                envoyaient des salutations et partageaient des nuits entières
-                avec les DJs.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="year">
-                2026
-            </div>
-
-            <h3 data-i18n="card3Title">
-                Le retour
-            </h3>
-
-            <p data-i18n="card3Text">
-                Aujourd’hui, Radio Caprichos renaît depuis les Landes de France,
-                avec la même passion :
-                la musique, l’amitié et la communauté.
-            </p>
-
-        </div>
-
+    <div class="card">
+      <div class="year">2009</div>
+      <h3 data-i18n="card2Title">L’époque xat.com</h3>
+      <p data-i18n="card2Text">
+        Le chat et la radio formaient une seule communauté.
+        Les auditeurs demandaient des chansons, envoyaient des salutations
+        et partageaient des nuits entières avec les DJs.
+      </p>
     </div>
 
+    <div class="card">
+      <div class="year">2026</div>
+      <h3 data-i18n="card3Title">Le retour</h3>
+      <p data-i18n="card3Text">
+        Aujourd’hui, Radio Caprichos renaît depuis les Landes de France,
+        avec la même passion : la musique, l’amitié et la communauté.
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-    © 2008 - 2026 Radio Caprichos
+  © 2008 - 2026 Radio Caprichos
 </footer>
 
 <script>
-
-const translations = {
-
-fr: {
-
-    navHome: "Accueil",
-    navPioneers: "Pionniers",
-    navGallery: "Galerie",
-    navCommunity: "Communauté",
-    navContact: "Contact",
-
-    slogan: "Des Andes du Pérou aux Landes de France",
-
-    intro:
-    "Née dans une chambre à Villa El Salvador en 2008, Radio Caprichos renaît aujourd’hui depuis les Landes de France.",
-
-    identity:
-    "UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.",
-
-    btnHistory:
-    "Découvrir l'histoire",
-
-    btnGallery:
-    "Voir la galerie",
-
-    historyTitle:
-    "NOTRE HISTOIRE",
-
-    historySubtitle:
-    "Une aventure née sur Internet",
-
-    card1Title:
-    "Villa El Salvador",
-
-    card1Text:
-    "Radio Caprichos est née dans une chambre à Villa El Salvador au Pérou, à une époque où les jeunes découvraient le streaming, les chats en ligne et les premières radios Internet.",
-
-    card2Title:
-    "L’époque xat.com",
-
-    card2Text:
-    "Le chat et la radio formaient une seule communauté. Les auditeurs demandaient des chansons, envoyaient des salutations et partageaient des nuits entières avec les DJs.",
-
-    card3Title:
-    "Le retour",
-
-    card3Text:
-    "Aujourd’hui, Radio Caprichos renaît depuis les Landes de France avec la même passion : la musique, l’amitié et la communauté."
-
+const translations={
+fr:{
+navHome:"Accueil",
+navPioneers:"Pionniers",
+navGallery:"Galerie",
+navCommunity:"Communauté",
+navContact:"Contact",
+slogan:"Des Andes du Pérou aux Landes de France",
+intro:"Née dans une chambre à Villa El Salvador en 2008, Radio Caprichos renaît aujourd’hui depuis les Landes de France.",
+identity:"UNE RADIO. <span>UNE COMMUNAUTÉ.</span> UNE FAMILLE.",
+btnHistory:"Découvrir l'histoire",
+btnGallery:"Voir la galerie",
+historyTitle:"NOTRE HISTOIRE",
+historySubtitle:"Une aventure née sur Internet",
+card1Title:"Villa El Salvador",
+card1Text:"Radio Caprichos est née dans une chambre à Villa El Salvador, au Pérou, à une époque où les jeunes découvraient le streaming, les chats en ligne et les premières radios Internet.",
+card2Title:"L’époque xat.com",
+card2Text:"Le chat et la radio formaient une seule communauté. Les auditeurs demandaient des chansons, envoyaient des salutations et partageaient des nuits entières avec les DJs.",
+card3Title:"Le retour",
+card3Text:"Aujourd’hui, Radio Caprichos renaît depuis les Landes de France, avec la même passion : la musique, l’amitié et la communauté."
 },
-
-es: {
-
-    navHome: "Inicio",
-    navPioneers: "Pioneros",
-    navGallery: "Galería",
-    navCommunity: "Comunidad",
-    navContact: "Contacto",
-
-    slogan:
-    "De los Andes del Perú a las Landes de Francia",
-
-    intro:
-    "Nacida en una habitación de Villa El Salvador en 2008, Radio Caprichos renace hoy desde las Landes de Francia.",
-
-    identity:
-    "UNA RADIO. <span>UNA COMUNIDAD.</span> UNA FAMILIA.",
-
-    btnHistory:
-    "Descubrir la historia",
-
-    btnGallery:
-    "Ver la galería",
-
-    historyTitle:
-    "NUESTRA HISTORIA",
-
-    historySubtitle:
-    "Una aventura nacida en Internet",
-
-    card1Title:
-    "Villa El Salvador",
-
-    card1Text:
-    "Radio Caprichos nació en una habitación de Villa El Salvador, Perú, en una época donde muchos jóvenes descubrían el streaming, los chats y las primeras radios por Internet.",
-
-    card2Title:
-    "La época xat.com",
-
-    card2Text:
-    "El chat y la radio formaban una sola comunidad. Los oyentes pedían canciones, enviaban saludos y compartían noches enteras con los DJs.",
-
-    card3Title:
-    "El regreso",
-
-    card3Text:
-    "Hoy Radio Caprichos renace desde las Landes de Francia con la misma pasión: la música, la amistad y la comunidad."
-
+es:{
+navHome:"Inicio",
+navPioneers:"Pioneros",
+navGallery:"Galería",
+navCommunity:"Comunidad",
+navContact:"Contacto",
+slogan:"De los Andes del Perú a las Landes de Francia",
+intro:"Nacida en una habitación de Villa El Salvador en 2008, Radio Caprichos renace hoy desde las Landes de Francia.",
+identity:"UNA RADIO. <span>UNA COMUNIDAD.</span> UNA FAMILIA.",
+btnHistory:"Descubrir la historia",
+btnGallery:"Ver la galería",
+historyTitle:"NUESTRA HISTORIA",
+historySubtitle:"Una aventura nacida en Internet",
+card1Title:"Villa El Salvador",
+card1Text:"Radio Caprichos nació en una habitación de Villa El Salvador, Perú, en una época donde muchos jóvenes descubrían el streaming, los chats y las primeras radios por Internet.",
+card2Title:"La época xat.com",
+card2Text:"El chat y la radio formaban una sola comunidad. Los oyentes pedían canciones, enviaban saludos y compartían noches enteras con los DJs.",
+card3Title:"El regreso",
+card3Text:"Hoy Radio Caprichos renace desde las Landes de Francia con la misma pasión: la música, la amistad y la comunidad."
 }
-
 };
 
-function setLang(lang) {
+function setLang(lang){
+  document.documentElement.lang=lang;
 
-    document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key=el.getAttribute("data-i18n");
+    el.textContent=translations[lang][key];
+  });
 
-    document.querySelectorAll("[data-i18n]").forEach(el => {
+  document.querySelectorAll("[data-i18n-html]").forEach(el=>{
+    const key=el.getAttribute("data-i18n-html");
+    el.innerHTML=translations[lang][key];
+  });
 
-        const key = el.getAttribute("data-i18n");
-        el.textContent = translations[lang][key];
-
-    });
-
-    document.querySelectorAll("[data-i18n-html]").forEach(el => {
-
-        const key = el.getAttribute("data-i18n-html");
-        el.innerHTML = translations[lang][key];
-
-    });
-
-    document.getElementById("btn-fr").classList.toggle("active", lang === "fr");
-    document.getElementById("btn-es").classList.toggle("active", lang === "es");
-
+  document.getElementById("btn-fr").classList.toggle("active",lang==="fr");
+  document.getElementById("btn-es").classList.toggle("active",lang==="es");
 }
-
 </script>
 
 </body>
