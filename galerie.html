@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galerie - Radio Caprichos</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie - Radio Caprichos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,6 +16,9 @@
     <a href="index.html" data-i18n="navHome">Accueil</a>
     <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
     <a href="galerie.html" data-i18n="navGallery">Galerie</a>
+    <a href="archives.html" data-i18n="navArchives">Archives</a>
+    <a href="caprichos-world.html">Caprichos World</a>
+    <a href="rencontres.html" data-i18n="navMeetings">Rencontres</a>
     <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
     <a href="contact.html" data-i18n="navContact">Contact</a>
 
@@ -28,63 +31,71 @@
 
 <section class="hero">
   <div>
-    <div class="condor">🦅</div>
+    <div class="condor">📸📻</div>
 
     <h1 data-i18n-html="pageTitle">LA <span>GALERIE</span></h1>
 
-    <div class="slogan" data-i18n="pageSubtitle">
-      La mémoire visuelle de Radio Caprichos
+    <div class="slogan" data-i18n="subtitle">
+      Les souvenirs visuels de Radio Caprichos
     </div>
 
     <p class="text" data-i18n="intro">
-      Avant les réseaux sociaux modernes, Radio Caprichos vivait à travers
-      les chats, les liens partagés, les mixes, les pages web gratuites
-      et les nuits passées ensemble en ligne.
+      Cette galerie rassemblera les logos, captures, anciens sites,
+      outils et souvenirs liés à l’histoire de Radio Caprichos.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
-  <h2 class="section-title" data-i18n="memoryTitle">TECHNOLOGIE D’UNE GÉNÉRATION</h2>
-  <div class="section-subtitle" data-i18n="memorySubtitle">
-    Les outils qui ont accompagné l’aventure
-  </div>
+  <h2 class="section-title" data-i18n="sectionTitle">ARCHIVES VISUELLES</h2>
 
   <div class="timeline">
 
     <div class="card">
-      <div class="year">Web</div>
+      <div class="year">🦅 Logos</div>
+      <h3 data-i18n="logoTitle">Identité Radio Caprichos</h3>
+      <p data-i18n="logoText">
+        Ici seront conservés les anciens logos, les essais graphiques et le futur logo officiel du Cóndor.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">💬 xat.com</div>
+      <h3 data-i18n="xatTitle">Le chat historique</h3>
+      <p data-i18n="xatText">
+        Captures du chat, pseudos, souvenirs des salons et moments partagés avec la communauté.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">🌐 Web</div>
       <h3>000webhost · .tk · .com.ar · 6te.net</h3>
       <p data-i18n="webText">
-        Les premiers pas de Radio Caprichos se sont faits avec des services gratuits.
-        Chaque domaine, chaque hébergement et chaque page représentaient une nouvelle étape.
+        Souvenirs des premiers hébergements, domaines gratuits et anciennes versions de la web.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">Chat</div>
-      <h3>xat.com</h3>
-      <p data-i18n="chatText">
-        Le cœur de la communauté. C’est là que les auditeurs demandaient des chansons,
-        envoyaient des salutations et passaient des nuits entières avec les DJs.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="year">Musique</div>
-      <h3>Ares · eMule · 4shared</h3>
-      <p data-i18n="musicText">
-        Les chansons, les mixes et les sessions circulaient grâce aux outils de partage
-        de l’époque. 4shared permettait de diffuser les créations des DJs.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="year">Radio</div>
+      <div class="year">🎧 Radio</div>
       <h3>Winamp · SAM Broadcaster · Virtual DJ · FL Studio</h3>
       <p data-i18n="radioText">
-        Transmettre demandait de la patience : configurer les plugins, garder l’ordinateur allumé,
-        surveiller le chat et continuer la musique sans interruption.
+        Les outils qui permettaient d’émettre, mixer, organiser la musique et animer la radio.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">📁 Mixes</div>
+      <h3>Ares · eMule · 4shared</h3>
+      <p data-i18n="mixesText">
+        Les plateformes et fichiers qui permettaient de partager les chansons, sessions et mixes des DJs.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">🤝 Rencontres</div>
+      <h3>Plaza Norte</h3>
+      <p data-i18n="meetingsText">
+        Photos et souvenirs des rencontres entre communautés, DJs et amis de Radio Caprichos.
       </p>
     </div>
 
@@ -92,7 +103,9 @@
 </section>
 
 <footer>
-  © 2008 - 2026 Radio Caprichos
+  <h3>RADIO CAPRICHOS</h3>
+  <p data-i18n="footerSlogan">Des Andes du Pérou aux Landes de France</p>
+  <small>© 2008 - 2026 Radio Caprichos</small>
 </footer>
 
 <script>
@@ -101,33 +114,46 @@ const translations = {
     navHome: "Accueil",
     navPioneers: "Pionniers",
     navGallery: "Galerie",
+    navArchives: "Archives",
+    navMeetings: "Rencontres",
     navCommunity: "Communauté",
     navContact: "Contact",
     pageTitle: "LA <span>GALERIE</span>",
-    pageSubtitle: "La mémoire visuelle de Radio Caprichos",
-    intro: "Avant les réseaux sociaux modernes, Radio Caprichos vivait à travers les chats, les liens partagés, les mixes, les pages web gratuites et les nuits passées ensemble en ligne.",
-    memoryTitle: "TECHNOLOGIE D’UNE GÉNÉRATION",
-    memorySubtitle: "Les outils qui ont accompagné l’aventure",
-    webText: "Les premiers pas de Radio Caprichos se sont faits avec des services gratuits. Chaque domaine, chaque hébergement et chaque page représentaient une nouvelle étape.",
-    chatText: "Le cœur de la communauté. C’est là que les auditeurs demandaient des chansons, envoyaient des salutations et passaient des nuits entières avec les DJs.",
-    musicText: "Les chansons, les mixes et les sessions circulaient grâce aux outils de partage de l’époque. 4shared permettait de diffuser les créations des DJs.",
-    radioText: "Transmettre demandait de la patience : configurer les plugins, garder l’ordinateur allumé, surveiller le chat et continuer la musique sans interruption."
+    subtitle: "Les souvenirs visuels de Radio Caprichos",
+    intro: "Cette galerie rassemblera les logos, captures, anciens sites, outils et souvenirs liés à l’histoire de Radio Caprichos.",
+    sectionTitle: "ARCHIVES VISUELLES",
+    logoTitle: "Identité Radio Caprichos",
+    logoText: "Ici seront conservés les anciens logos, les essais graphiques et le futur logo officiel du Cóndor.",
+    xatTitle: "Le chat historique",
+    xatText: "Captures du chat, pseudos, souvenirs des salons et moments partagés avec la communauté.",
+    webText: "Souvenirs des premiers hébergements, domaines gratuits et anciennes versions de la web.",
+    radioText: "Les outils qui permettaient d’émettre, mixer, organiser la musique et animer la radio.",
+    mixesText: "Les plateformes et fichiers qui permettaient de partager les chansons, sessions et mixes des DJs.",
+    meetingsText: "Photos et souvenirs des rencontres entre communautés, DJs et amis de Radio Caprichos.",
+    footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
+
   es: {
     navHome: "Inicio",
     navPioneers: "Pioneros",
     navGallery: "Galería",
+    navArchives: "Archivos",
+    navMeetings: "Encuentros",
     navCommunity: "Comunidad",
     navContact: "Contacto",
     pageTitle: "LA <span>GALERÍA</span>",
-    pageSubtitle: "La memoria visual de Radio Caprichos",
-    intro: "Antes de las redes sociales modernas, Radio Caprichos vivía a través de los chats, los enlaces compartidos, los mixes, las páginas web gratuitas y las noches enteras conectados en línea.",
-    memoryTitle: "TECNOLOGÍA DE UNA GENERACIÓN",
-    memorySubtitle: "Las herramientas que acompañaron la aventura",
-    webText: "Los primeros pasos de Radio Caprichos se hicieron con servicios gratuitos. Cada dominio, cada hosting y cada página representaban una nueva etapa.",
-    chatText: "El corazón de la comunidad. Allí los oyentes pedían canciones, mandaban saludos y pasaban noches enteras con los DJs.",
-    musicText: "Las canciones, los mixes y las sesiones circulaban gracias a las herramientas de intercambio de la época. 4shared permitía difundir las creaciones de los DJs.",
-    radioText: "Transmitir exigía paciencia: configurar plugins, mantener la computadora encendida, vigilar el chat y seguir con la música sin interrupción."
+    subtitle: "Los recuerdos visuales de Radio Caprichos",
+    intro: "Esta galería reunirá logos, capturas, antiguas webs, herramientas y recuerdos ligados a la historia de Radio Caprichos.",
+    sectionTitle: "ARCHIVOS VISUALES",
+    logoTitle: "Identidad Radio Caprichos",
+    logoText: "Aquí se conservarán los logos antiguos, pruebas gráficas y el futuro logo oficial del Cóndor.",
+    xatTitle: "El chat histórico",
+    xatText: "Capturas del chat, apodos, recuerdos de las salas y momentos compartidos con la comunidad.",
+    webText: "Recuerdos de los primeros hostings, dominios gratuitos y antiguas versiones de la web.",
+    radioText: "Las herramientas que permitían emitir, mezclar, organizar la música y animar la radio.",
+    mixesText: "Las plataformas y archivos que permitían compartir canciones, sesiones y mixes de los DJs.",
+    meetingsText: "Fotos y recuerdos de los encuentros entre comunidades, DJs y amigos de Radio Caprichos.",
+    footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
 };
 
