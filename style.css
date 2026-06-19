@@ -274,76 +274,21 @@ footer h3 {
   }
 }
 /* ===================================== */
-/* BANDA CAPRICHOS - CSS VERSION */
+/* BANDA CAPRICHOS SVG */
 /* ===================================== */
 
 .banda-caprichos{
-  width:100%;
-  background:#050505;
-  border-top:1px solid rgba(212,175,55,.35);
-  border-bottom:1px solid rgba(212,175,55,.35);
-  padding:22px 0 0;
-  margin:0;
-  overflow:hidden;
+    width:100%;
+    margin:0;
+    padding:0;
+    background:#050505;
+    border-top:1px solid rgba(212,175,55,.35);
+    border-bottom:1px solid rgba(212,175,55,.35);
 }
 
-.banda-texto{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:42px;
-  padding:0 20px 22px;
-  color:#f5f5f5;
-  font-weight:bold;
-  letter-spacing:8px;
-  font-size:18px;
-}
-
-.banda-texto .rojo{
-  color:#c8102e;
-}
-
-.banda-texto .azul{
-  color:#0077c8;
-}
-
-.banda-decoracion{
-  height:54px;
-  width:100%;
-  border-top:1px solid rgba(212,175,55,.35);
-  border-bottom:1px solid rgba(212,175,55,.35);
-
-  background:
-    linear-gradient(135deg, transparent 25%, rgba(0,0,0,.65) 25%, rgba(0,0,0,.65) 35%, transparent 35%) 0 0 / 64px 54px,
-    linear-gradient(45deg, transparent 25%, rgba(0,0,0,.65) 25%, rgba(0,0,0,.65) 35%, transparent 35%) 0 0 / 64px 54px,
-    repeating-linear-gradient(
-      90deg,
-      #c8102e 0%,
-      #ff3b00 12%,
-      #f2c300 24%,
-      #1aa83a 38%,
-      #00a0c8 52%,
-      #0047ff 66%,
-      #6b2bbf 80%,
-      #c2187a 100%
-    );
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  .banda-texto{
-    flex-direction:column;
-    gap:10px;
-    letter-spacing:5px;
-    font-size:14px;
-    padding-bottom:16px;
-  }
-
-  .banda-decoracion{
-    height:38px;
-    background-size:48px 38px, 48px 38px, auto;
-  }
-
+.banda-caprichos img{
+    display:block;
+    width:100%;
+    height:54px;
+    object-fit:cover;
 }
