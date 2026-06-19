@@ -278,30 +278,33 @@ footer h3 {
 /* ===================================== */
 
 .banda-caprichos{
-  width:100%;
-  margin:0;
-  padding:0;
-  border-top:1px solid rgba(212,175,55,.25);
-  border-bottom:1px solid rgba(212,175,55,.25);
-  background:#050505;
-  text-align:center;
+    width:100%;
+    background:#050505;
+    border-top:1px solid rgba(212,175,55,.25);
+    border-bottom:1px solid rgba(212,175,55,.25);
+    padding:15px 0;
+    margin:0;
 }
 
 .banda-caprichos img{
-  width:100%;
-  max-width:1400px;
-  height:auto;
-  display:block;
-  margin:auto;
+    display:block;
+    width:100%;
+    max-width:1200px;
+    height:auto;
+    margin:0 auto;
 }
 
-/* Mobile */
+/* VERSION MOBILE */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-  .banda-caprichos img{
-    width:100%;
-    max-width:100%;
-  }
+    .banda-caprichos{
+        padding:10px 0;
+    }
+
+    .banda-caprichos img{
+        width:95%;
+        max-width:95%;
+    }
 
 }
