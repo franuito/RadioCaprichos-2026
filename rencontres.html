@@ -14,6 +14,7 @@
 
   <nav>
     <a href="index.html" data-i18n="navHome">Accueil</a>
+    <a href="radio.html" data-i18n="navRadio">Radio</a>
     <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
     <a href="galerie.html" data-i18n="navGallery">Galerie</a>
     <a href="archives.html" data-i18n="navArchives">Archives</a>
@@ -31,7 +32,7 @@
 
 <section class="hero">
   <div>
-    <div class="condor">📻🤝</div>
+    <div class="condor">🤝📻</div>
 
     <h1 data-i18n-html="pageTitle">LES <span>RENCONTRES</span></h1>
 
@@ -41,40 +42,52 @@
 
     <p class="text" data-i18n="intro">
       Radio Caprichos n’existait pas seulement derrière un écran.
-      Les amitiés nées sur Internet se transformaient parfois en vraies rencontres.
+      Les amitiés nées en ligne pouvaient devenir des rencontres réelles.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
-  <h2 class="section-title" data-i18n="sectionTitle">PLAZA NORTE ET LES SOUVENIRS</h2>
+  <h2 class="section-title" data-i18n="sectionTitle">DES PSEUDOS AUX VISAGES</h2>
+  <div class="section-subtitle" data-i18n="sectionSubtitle">
+    Les souvenirs humains de Radio Caprichos
+  </div>
 
   <div class="timeline">
 
     <div class="card">
-      <div class="year">Plaza Norte</div>
-      <h3 data-i18n="card1Title">Le point de rencontre</h3>
-      <p data-i18n="card1Text">
-        Les dimanches, plusieurs jeunes des communautés radio se retrouvaient à Plaza Norte
-        avant de partir vers des discothèques, des événements ou des rencontres entre DJs.
+      <div class="year">💬 xat.com</div>
+      <h3 data-i18n="chatTitle">Les premières connexions</h3>
+      <p data-i18n="chatText">
+        Les rencontres commençaient souvent par un pseudo, un message dans le chat,
+        une demande de chanson ou un salut envoyé au DJ.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">DJ vs DJ</div>
-      <h3 data-i18n="card2Title">Les sessions entre communautés</h3>
-      <p data-i18n="card2Text">
-        Chaque communauté avait ses DJs, ses amis, ses auditeurs et son style.
-        Les rencontres donnaient parfois lieu à des sessions B2B ou DJ vs DJ.
+      <div class="year">📍 Plaza Norte</div>
+      <h3 data-i18n="plazaTitle">Le point de rencontre</h3>
+      <p data-i18n="plazaText">
+        Certaines communautés se retrouvaient le dimanche à Plaza Norte avant de partir
+        vers des événements, des discothèques ou des sessions entre DJs.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">Souvenirs</div>
-      <h3 data-i18n="card3Title">Une époque unique</h3>
-      <p data-i18n="card3Text">
-        Ces moments ont transformé des pseudos de chat en vraies amitiés.
-        Radio Caprichos faisait partie de cette génération qui a découvert Internet ensemble.
+      <div class="year">🎧 DJ vs DJ</div>
+      <h3 data-i18n="djTitle">Les sessions entre communautés</h3>
+      <p data-i18n="djText">
+        Chaque radio avait ses DJs, ses auditeurs, son style et son énergie.
+        Ces rencontres pouvaient devenir des sessions B2B ou DJ vs DJ.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">❤️ Souvenirs</div>
+      <h3 data-i18n="memoryTitle">Une époque unique</h3>
+      <p data-i18n="memoryText">
+        Ces moments ont transformé des pseudos de chat en visages,
+        et des conversations virtuelles en vrais souvenirs.
       </p>
     </div>
 
@@ -83,7 +96,17 @@
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
-  <p data-i18n="footerSlogan">Des Andes du Pérou aux Landes de France</p>
+
+  <p data-i18n="footerSlogan">
+    Des Andes du Pérou aux Landes de France
+  </p>
+
+  <div class="footer-tags">
+    <span>📻 Radio</span>
+    <span>🌎 Communauté</span>
+    <span>🦅 Mémoire</span>
+  </div>
+
   <small>© 2008 - 2026 Radio Caprichos</small>
 </footer>
 
@@ -91,43 +114,65 @@
 const translations = {
   fr: {
     navHome: "Accueil",
+    navRadio: "Radio",
     navPioneers: "Pionniers",
     navGallery: "Galerie",
     navArchives: "Archives",
     navMeetings: "Rencontres",
     navCommunity: "Communauté",
     navContact: "Contact",
+
     pageTitle: "LES <span>RENCONTRES</span>",
     subtitle: "Quand Internet devenait une vraie communauté",
-    intro: "Radio Caprichos n’existait pas seulement derrière un écran. Les amitiés nées sur Internet se transformaient parfois en vraies rencontres.",
-    sectionTitle: "PLAZA NORTE ET LES SOUVENIRS",
-    card1Title: "Le point de rencontre",
-    card1Text: "Les dimanches, plusieurs jeunes des communautés radio se retrouvaient à Plaza Norte avant de partir vers des discothèques, des événements ou des rencontres entre DJs.",
-    card2Title: "Les sessions entre communautés",
-    card2Text: "Chaque communauté avait ses DJs, ses amis, ses auditeurs et son style. Les rencontres donnaient parfois lieu à des sessions B2B ou DJ vs DJ.",
-    card3Title: "Une époque unique",
-    card3Text: "Ces moments ont transformé des pseudos de chat en vraies amitiés. Radio Caprichos faisait partie de cette génération qui a découvert Internet ensemble.",
+    intro: "Radio Caprichos n’existait pas seulement derrière un écran. Les amitiés nées en ligne pouvaient devenir des rencontres réelles.",
+
+    sectionTitle: "DES PSEUDOS AUX VISAGES",
+    sectionSubtitle: "Les souvenirs humains de Radio Caprichos",
+
+    chatTitle: "Les premières connexions",
+    chatText: "Les rencontres commençaient souvent par un pseudo, un message dans le chat, une demande de chanson ou un salut envoyé au DJ.",
+
+    plazaTitle: "Le point de rencontre",
+    plazaText: "Certaines communautés se retrouvaient le dimanche à Plaza Norte avant de partir vers des événements, des discothèques ou des sessions entre DJs.",
+
+    djTitle: "Les sessions entre communautés",
+    djText: "Chaque radio avait ses DJs, ses auditeurs, son style et son énergie. Ces rencontres pouvaient devenir des sessions B2B ou DJ vs DJ.",
+
+    memoryTitle: "Une époque unique",
+    memoryText: "Ces moments ont transformé des pseudos de chat en visages, et des conversations virtuelles en vrais souvenirs.",
+
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
 
   es: {
     navHome: "Inicio",
+    navRadio: "Radio",
     navPioneers: "Pioneros",
     navGallery: "Galería",
     navArchives: "Archivos",
     navMeetings: "Encuentros",
     navCommunity: "Comunidad",
     navContact: "Contacto",
+
     pageTitle: "LOS <span>ENCUENTROS</span>",
     subtitle: "Cuando Internet se convertía en una comunidad real",
-    intro: "Radio Caprichos no existía solamente detrás de una pantalla. Las amistades nacidas en Internet a veces se transformaban en encuentros reales.",
-    sectionTitle: "PLAZA NORTE Y LOS RECUERDOS",
-    card1Title: "El punto de encuentro",
-    card1Text: "Los domingos, varios jóvenes de las comunidades radio se reunían en Plaza Norte antes de ir a discotecas, eventos o encuentros entre DJs.",
-    card2Title: "Las sesiones entre comunidades",
-    card2Text: "Cada comunidad tenía sus DJs, sus amigos, sus oyentes y su estilo. Los encuentros a veces terminaban en sesiones B2B o DJ vs DJ.",
-    card3Title: "Una época única",
-    card3Text: "Esos momentos transformaron apodos de chat en amistades reales. Radio Caprichos formó parte de esa generación que descubrió Internet juntos.",
+    intro: "Radio Caprichos no existía solamente detrás de una pantalla. Las amistades nacidas en línea podían convertirse en encuentros reales.",
+
+    sectionTitle: "DE APODOS A ROSTROS",
+    sectionSubtitle: "Los recuerdos humanos de Radio Caprichos",
+
+    chatTitle: "Las primeras conexiones",
+    chatText: "Los encuentros empezaban muchas veces con un apodo, un mensaje en el chat, un pedido de canción o un saludo enviado al DJ.",
+
+    plazaTitle: "El punto de encuentro",
+    plazaText: "Algunas comunidades se reunían los domingos en Plaza Norte antes de ir a eventos, discotecas o sesiones entre DJs.",
+
+    djTitle: "Las sesiones entre comunidades",
+    djText: "Cada radio tenía sus DJs, sus oyentes, su estilo y su energía. Esos encuentros podían convertirse en sesiones B2B o DJ vs DJ.",
+
+    memoryTitle: "Una época única",
+    memoryText: "Esos momentos transformaron apodos de chat en rostros, y conversaciones virtuales en recuerdos reales.",
+
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
 };
