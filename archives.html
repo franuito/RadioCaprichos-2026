@@ -41,16 +41,85 @@
     </div>
 
     <p class="text" data-i18n="intro">
-      Chaque projet laisse des souvenirs. Cette page rassemble les traces,
-      les outils, les plateformes et les moments qui ont marqué l'histoire de Radio Caprichos.
+      Une capsule du temps pour préserver l’histoire, les outils, les souvenirs
+      et les traces numériques de Radio Caprichos.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
-  <h2 class="section-title" data-i18n="sectionTitle">MÉMOIRE NUMÉRIQUE</h2>
-  <div class="section-subtitle" data-i18n="sectionSubtitle">
-    Les outils et plateformes d'une époque
+  <h2 class="section-title" data-i18n="chronoTitle">CHRONOLOGIE</h2>
+
+  <div class="section-subtitle" data-i18n="chronoSubtitle">
+    De Villa El Salvador aux Landes de France
+  </div>
+
+  <div class="timeline">
+
+    <div class="card">
+      <div class="year">2008</div>
+      <h3 data-i18n="t2008Title">Naissance à Villa El Salvador</h3>
+      <p data-i18n="t2008Text">
+        Radio Caprichos naît à la fin de l’année 2008, dans une chambre à Villa El Salvador,
+        à une époque où les jeunes découvraient le streaming, les chats en ligne,
+        Virtual DJ, FL Studio et les premières radios Internet.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">2009</div>
+      <h3 data-i18n="t2009Title">L’époque xat.com</h3>
+      <p data-i18n="t2009Text">
+        Le chat devient le cœur de la communauté. Les auditeurs demandent des chansons,
+        envoient des salutations et partagent des nuits entières avec les DJs.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">2010</div>
+      <h3 data-i18n="t2010Title">Les premiers sites web</h3>
+      <p data-i18n="t2010Text">
+        Radio Caprichos grandit grâce aux services gratuits comme 000webhost,
+        dot.tk, .com.ar et 6te.net. Chaque domaine et chaque page représentaient
+        une nouvelle étape.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">2011</div>
+      <h3 data-i18n="t2011Title">Communauté et rencontres</h3>
+      <p data-i18n="t2011Text">
+        La radio dépasse l’écran. Les communautés se retrouvent, les DJs partagent
+        leurs mixes, et certains souvenirs passent du chat aux rencontres réelles.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">2012 - 2025</div>
+      <h3 data-i18n="pauseTitle">Pause et souvenirs</h3>
+      <p data-i18n="pauseText">
+        La première étape de Radio Caprichos se termine progressivement, mais les souvenirs,
+        les cuñas, les amitiés et l’esprit de la radio restent présents.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">2026</div>
+      <h3 data-i18n="returnTitle">Le retour depuis la France</h3>
+      <p data-i18n="returnText">
+        Depuis les Landes de France, Radio Caprichos renaît avec une nouvelle vision :
+        préserver son histoire, reconstruire sa communauté et préparer une nouvelle étape.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="dark-section">
+  <h2 class="section-title" data-i18n="memoryTitle">MÉMOIRE NUMÉRIQUE</h2>
+
+  <div class="section-subtitle" data-i18n="memorySubtitle">
+    Les outils et plateformes d’une génération
   </div>
 
   <div class="timeline">
@@ -59,8 +128,8 @@
       <div class="year">💬</div>
       <h3>xat.com</h3>
       <p data-i18n="xatText">
-        Le chat historique où la communauté se réunissait chaque soir pour écouter la radio,
-        discuter et partager des moments ensemble.
+        Le chat historique où la communauté se réunissait pour écouter la radio,
+        discuter, demander des chansons et envoyer des salutations.
       </p>
     </div>
 
@@ -68,8 +137,8 @@
       <div class="year">🌐</div>
       <h3>000webhost · dot.tk · .com.ar · 6te.net</h3>
       <p data-i18n="hostingText">
-        Les premiers hébergements et noms de domaine qui ont permis à Radio Caprichos
-        d'exister sur Internet.
+        Les premiers hébergements et domaines gratuits qui ont permis à Radio Caprichos
+        d’exister sur Internet.
       </p>
     </div>
 
@@ -87,7 +156,7 @@
       <h3>SAM Broadcaster</h3>
       <p data-i18n="samText">
         Le logiciel utilisé pour diffuser la musique et faire vivre Radio Caprichos,
-        même avec les limites techniques de l’époque.
+        malgré les limites techniques de l’époque.
       </p>
     </div>
 
@@ -101,19 +170,16 @@
     </div>
 
     <div class="card">
-      <div class="year">🦅</div>
-      <h3 data-i18n="futureTitle">Souvenirs à venir</h3>
-      <p data-i18n="futureText">
-        Cette section accueillera bientôt les captures d'écran, vidéos, logos,
-        cuñas historiques et autres archives retrouvées.
+      <div class="year">🎙️</div>
+      <h3 data-i18n="audioTitle">Cuñas historiques</h3>
+      <p data-i18n="audioText">
+        Les anciennes cuñas audio retrouvées seront intégrées plus tard comme archives sonores
+        de Radio Caprichos.
       </p>
     </div>
 
   </div>
 </section>
-<div class="banda-caprichos">
-  <img src="assets/images/banda-caprichos.png" alt="Banda Caprichos">
-</div>
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
@@ -145,18 +211,39 @@ const translations = {
 
     pageTitle: "LES <span>ARCHIVES</span>",
     subtitle: "La mémoire de Radio Caprichos",
-    intro: "Chaque projet laisse des souvenirs. Cette page rassemble les traces, les outils, les plateformes et les moments qui ont marqué l'histoire de Radio Caprichos.",
+    intro: "Une capsule du temps pour préserver l’histoire, les outils, les souvenirs et les traces numériques de Radio Caprichos.",
 
-    sectionTitle: "MÉMOIRE NUMÉRIQUE",
-    sectionSubtitle: "Les outils et plateformes d'une époque",
+    chronoTitle: "CHRONOLOGIE",
+    chronoSubtitle: "De Villa El Salvador aux Landes de France",
 
-    xatText: "Le chat historique où la communauté se réunissait chaque soir pour écouter la radio, discuter et partager des moments ensemble.",
-    hostingText: "Les premiers hébergements et noms de domaine qui ont permis à Radio Caprichos d'exister sur Internet.",
+    t2008Title: "Naissance à Villa El Salvador",
+    t2008Text: "Radio Caprichos naît à la fin de l’année 2008, dans une chambre à Villa El Salvador, à une époque où les jeunes découvraient le streaming, les chats en ligne, Virtual DJ, FL Studio et les premières radios Internet.",
+
+    t2009Title: "L’époque xat.com",
+    t2009Text: "Le chat devient le cœur de la communauté. Les auditeurs demandent des chansons, envoient des salutations et partagent des nuits entières avec les DJs.",
+
+    t2010Title: "Les premiers sites web",
+    t2010Text: "Radio Caprichos grandit grâce aux services gratuits comme 000webhost, dot.tk, .com.ar et 6te.net. Chaque domaine et chaque page représentaient une nouvelle étape.",
+
+    t2011Title: "Communauté et rencontres",
+    t2011Text: "La radio dépasse l’écran. Les communautés se retrouvent, les DJs partagent leurs mixes, et certains souvenirs passent du chat aux rencontres réelles.",
+
+    pauseTitle: "Pause et souvenirs",
+    pauseText: "La première étape de Radio Caprichos se termine progressivement, mais les souvenirs, les cuñas, les amitiés et l’esprit de la radio restent présents.",
+
+    returnTitle: "Le retour depuis la France",
+    returnText: "Depuis les Landes de France, Radio Caprichos renaît avec une nouvelle vision : préserver son histoire, reconstruire sa communauté et préparer une nouvelle étape.",
+
+    memoryTitle: "MÉMOIRE NUMÉRIQUE",
+    memorySubtitle: "Les outils et plateformes d’une génération",
+
+    xatText: "Le chat historique où la communauté se réunissait pour écouter la radio, discuter, demander des chansons et envoyer des salutations.",
+    hostingText: "Les premiers hébergements et domaines gratuits qui ont permis à Radio Caprichos d’exister sur Internet.",
     musicText: "Les outils qui accompagnaient les premiers mixes, les essais musicaux et les débuts de la musique créée depuis ordinateur.",
-    samText: "Le logiciel utilisé pour diffuser la musique et faire vivre Radio Caprichos, même avec les limites techniques de l’époque.",
+    samText: "Le logiciel utilisé pour diffuser la musique et faire vivre Radio Caprichos, malgré les limites techniques de l’époque.",
     sharedText: "Les chansons, mixes et contenus audio circulaient grâce aux outils de partage utilisés par toute une génération.",
-    futureTitle: "Souvenirs à venir",
-    futureText: "Cette section accueillera bientôt les captures d'écran, vidéos, logos, cuñas historiques et autres archives retrouvées.",
+    audioTitle: "Cuñas historiques",
+    audioText: "Les anciennes cuñas audio retrouvées seront intégrées plus tard comme archives sonores de Radio Caprichos.",
 
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
@@ -173,18 +260,39 @@ const translations = {
 
     pageTitle: "LOS <span>ARCHIVOS</span>",
     subtitle: "La memoria de Radio Caprichos",
-    intro: "Todo proyecto deja recuerdos. Esta página reúne las huellas, herramientas, plataformas y momentos que marcaron la historia de Radio Caprichos.",
+    intro: "Una cápsula del tiempo para preservar la historia, las herramientas, los recuerdos y las huellas digitales de Radio Caprichos.",
 
-    sectionTitle: "MEMORIA DIGITAL",
-    sectionSubtitle: "Las herramientas y plataformas de una época",
+    chronoTitle: "CRONOLOGÍA",
+    chronoSubtitle: "De Villa El Salvador a las Landes de Francia",
 
-    xatText: "El chat histórico donde la comunidad se reunía cada noche para escuchar la radio, conversar y compartir momentos juntos.",
-    hostingText: "Los primeros hostings y dominios que permitieron a Radio Caprichos existir en Internet.",
+    t2008Title: "Nacimiento en Villa El Salvador",
+    t2008Text: "Radio Caprichos nace a finales del año 2008, en una habitación de Villa El Salvador, en una época donde los jóvenes descubrían el streaming, los chats en línea, Virtual DJ, FL Studio y las primeras radios por Internet.",
+
+    t2009Title: "La época xat.com",
+    t2009Text: "El chat se convierte en el corazón de la comunidad. Los oyentes pedían canciones, enviaban saludos y compartían noches enteras con los DJs.",
+
+    t2010Title: "Las primeras páginas web",
+    t2010Text: "Radio Caprichos crece gracias a servicios gratuitos como 000webhost, dot.tk, .com.ar y 6te.net. Cada dominio y cada página representaban una nueva etapa.",
+
+    t2011Title: "Comunidad y encuentros",
+    t2011Text: "La radio va más allá de la pantalla. Las comunidades se encuentran, los DJs comparten sus mixes y algunos recuerdos pasan del chat a encuentros reales.",
+
+    pauseTitle: "Pausa y recuerdos",
+    pauseText: "La primera etapa de Radio Caprichos termina progresivamente, pero los recuerdos, las cuñas, las amistades y el espíritu de la radio permanecen.",
+
+    returnTitle: "El regreso desde Francia",
+    returnText: "Desde las Landes de Francia, Radio Caprichos renace con una nueva visión: preservar su historia, reconstruir su comunidad y preparar una nueva etapa.",
+
+    memoryTitle: "MEMORIA DIGITAL",
+    memorySubtitle: "Las herramientas y plataformas de una generación",
+
+    xatText: "El chat histórico donde la comunidad se reunía para escuchar la radio, conversar, pedir canciones y enviar saludos.",
+    hostingText: "Los primeros hostings y dominios gratuitos que permitieron a Radio Caprichos existir en Internet.",
     musicText: "Las herramientas que acompañaban los primeros mixes, las pruebas musicales y los inicios de la música creada desde computadora.",
     samText: "El software utilizado para transmitir música y dar vida a Radio Caprichos, incluso con las limitaciones técnicas de la época.",
     sharedText: "Las canciones, mixes y contenidos de audio circulaban gracias a las herramientas de intercambio usadas por toda una generación.",
-    futureTitle: "Recuerdos por venir",
-    futureText: "Esta sección recibirá próximamente capturas de pantalla, videos, logos, cuñas históricas y otros archivos recuperados.",
+    audioTitle: "Cuñas históricas",
+    audioText: "Las antiguas cuñas de audio recuperadas serán integradas más adelante como archivos sonoros de Radio Caprichos.",
 
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
