@@ -41,8 +41,8 @@
     </div>
 
     <p class="text" data-i18n="intro">
-      Radio Caprichos est née pour partager de la musique,
-      des salutations, des souvenirs et des voix venues de différents horizons.
+      Radio Caprichos est née pour partager de la musique, des salutations,
+      des souvenirs et des voix venues de différents horizons.
     </p>
 
     <div class="buttons">
@@ -58,10 +58,20 @@
 
   <div class="timeline">
     <div class="card">
-      <div class="year">🚧 Streaming</div>
-      <h3 data-i18n="streamTitle">En construction</h3>
+      <div class="year" data-i18n="playerStatus">🔴 Hors ligne</div>
+      <h3 data-i18n="streamTitle">Player de test</h3>
       <p data-i18n="streamText">
-        Le futur lecteur de Radio Caprichos sera ajouté ici lorsque le service de streaming sera prêt.
+        Le lecteur officiel sera ajouté ici lorsque le streaming sera prêt.
+        Pour l’instant, cette zone servira aux tests audio et aux archives sonores.
+      </p>
+
+      <audio controls>
+        <source src="assets/audio/test-radio.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas le lecteur audio.
+      </audio>
+
+      <p class="text" data-i18n="audioNote">
+        Aucun streaming officiel n’est encore actif. Le lecteur est réservé aux tests.
       </p>
     </div>
   </div>
@@ -73,10 +83,11 @@
 
   <div class="timeline">
     <div class="card">
-      <div class="year" data-i18n="offlineLabel">🔴 Hors ligne</div>
-      <h3 data-i18n="offlineTitle">Streaming en préparation</h3>
+      <div class="year">🚧</div>
+      <h3 data-i18n="offlineTitle">Radio en préparation</h3>
       <p data-i18n="offlineText">
-        Radio Caprichos prépare actuellement son retour. Le lecteur audio et les premières émissions seront ajoutés prochainement.
+        Radio Caprichos prépare actuellement son retour. Le site, les archives,
+        les cuñas historiques et le futur streaming sont en cours de construction.
       </p>
     </div>
 
@@ -84,7 +95,8 @@
       <div class="year">📅</div>
       <h3 data-i18n="nextTitle">Première émission test</h3>
       <p data-i18n="nextText">
-        Diffusion de musique latino, souvenirs de l'époque xat.com et présentation du projet Radio Caprichos 2026.
+        Une première émission test pourra présenter la musique latino,
+        les souvenirs de l’époque xat.com et le projet Radio Caprichos 2026.
       </p>
     </div>
   </div>
@@ -99,7 +111,8 @@
       <div class="year">🎧</div>
       <h3>Franuito</h3>
       <p data-i18n="franuitoText">
-        Créateur de Radio Caprichos. Administrateur, webmaster, animateur, DJ, technicien, modérateur et gestionnaire de la communauté.
+        Créateur de Radio Caprichos. Administrateur, webmaster, animateur, DJ,
+        technicien, modérateur et gestionnaire de la communauté.
       </p>
     </div>
 
@@ -107,7 +120,8 @@
       <div class="year">🎧</div>
       <h3>Carlos "Lokerfy / K-rloh"</h3>
       <p data-i18n="carlosText">
-        Ami d'école et source d'inspiration. Ses mixes et son énergie ont contribué à la naissance du projet.
+        Ami d’école et source d’inspiration. Ses mixes et son énergie ont contribué
+        à la naissance du projet.
       </p>
     </div>
 
@@ -115,7 +129,8 @@
       <div class="year">🎧</div>
       <h3>Eddie "Puchi"</h3>
       <p data-i18n="puchiText">
-        Membre historique de la radio. Il participait aux animations et contribuait à faire connaître Radio Caprichos.
+        Membre historique de la radio. Il participait aux animations et contribuait
+        à faire connaître Radio Caprichos.
       </p>
     </div>
   </div>
@@ -123,13 +138,15 @@
 
 <section class="dark-section">
   <h2 class="section-title" data-i18n="programTitle">ESPRIT MUSICAL</h2>
+  <div class="section-subtitle" data-i18n="programSubtitle">Entre souvenirs et nouvelle étape</div>
 
   <div class="timeline">
     <div class="card">
       <div class="year">🎵 2008 - 2011</div>
       <h3 data-i18n="classicTitle">L’époque classique</h3>
       <p data-i18n="classicText">
-        Reggaetón classique, salsa, bachata, cumbia, rock latino, mixes de DJs et chansons demandées par le chat.
+        Reggaetón classique, salsa, bachata, cumbia, rock latino, mixes de DJs
+        et chansons demandées par le chat.
       </p>
     </div>
 
@@ -137,15 +154,17 @@
       <div class="year">🌎 2026</div>
       <h3 data-i18n="futureTitle">Le nouveau son</h3>
       <p data-i18n="futureText">
-        Une radio entre le Pérou et la France, entre souvenirs, musique latine, culture et communauté.
+        Une radio entre le Pérou et la France, entre souvenirs, musique latine,
+        culture et communauté.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">🎙️ DJs</div>
+      <div class="year">🎙️</div>
       <h3 data-i18n="djTitle">Les voix de la radio</h3>
       <p data-i18n="djText">
-        Les DJs, animateurs et amis historiques auront leur place dans la mémoire de Radio Caprichos.
+        Les DJs, animateurs, amis historiques et nouvelles voix auront leur place
+        dans la mémoire de Radio Caprichos.
       </p>
     </div>
   </div>
@@ -153,7 +172,17 @@
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
-  <p data-i18n="footerSlogan">Des Andes du Pérou aux Landes de France</p>
+
+  <p data-i18n="footerSlogan">
+    Des Andes du Pérou aux Landes de France
+  </p>
+
+  <div class="footer-tags">
+    <span>📻 Radio</span>
+    <span>🌎 Communauté</span>
+    <span>🦅 Mémoire</span>
+  </div>
+
   <small>© 2008 - 2026 Radio Caprichos</small>
 </footer>
 
@@ -168,34 +197,42 @@ const translations = {
     navMeetings: "Rencontres",
     navCommunity: "Communauté",
     navContact: "Contact",
+
     pageTitle: "LA <span>RADIO</span>",
     subtitle: "Le cœur vivant de Radio Caprichos",
     intro: "Radio Caprichos est née pour partager de la musique, des salutations, des souvenirs et des voix venues de différents horizons.",
     btnPlayer: "Écouter bientôt",
     btnArchives: "Voir les archives",
+
     playerTitle: "LECTEUR RADIO",
     playerSubtitle: "Le streaming arrive prochainement",
-    streamTitle: "En construction",
-    streamText: "Le futur lecteur de Radio Caprichos sera ajouté ici lorsque le service de streaming sera prêt.",
+    playerStatus: "🔴 Hors ligne",
+    streamTitle: "Player de test",
+    streamText: "Le lecteur officiel sera ajouté ici lorsque le streaming sera prêt. Pour l’instant, cette zone servira aux tests audio et aux archives sonores.",
+    audioNote: "Aucun streaming officiel n’est encore actif. Le lecteur est réservé aux tests.",
+
     statusTitle: "STATUT DE LA RADIO",
     statusSubtitle: "État actuel du projet",
-    offlineLabel: "🔴 Hors ligne",
-    offlineTitle: "Streaming en préparation",
-    offlineText: "Radio Caprichos prépare actuellement son retour. Le lecteur audio et les premières émissions seront ajoutés prochainement.",
+    offlineTitle: "Radio en préparation",
+    offlineText: "Radio Caprichos prépare actuellement son retour. Le site, les archives, les cuñas historiques et le futur streaming sont en cours de construction.",
     nextTitle: "Première émission test",
-    nextText: "Diffusion de musique latino, souvenirs de l'époque xat.com et présentation du projet Radio Caprichos 2026.",
+    nextText: "Une première émission test pourra présenter la musique latino, les souvenirs de l’époque xat.com et le projet Radio Caprichos 2026.",
+
     djsTitle: "DJS HISTORIQUES",
     djsSubtitle: "Les voix qui ont marqué Radio Caprichos",
     franuitoText: "Créateur de Radio Caprichos. Administrateur, webmaster, animateur, DJ, technicien, modérateur et gestionnaire de la communauté.",
-    carlosText: "Ami d'école et source d'inspiration. Ses mixes et son énergie ont contribué à la naissance du projet.",
+    carlosText: "Ami d’école et source d’inspiration. Ses mixes et son énergie ont contribué à la naissance du projet.",
     puchiText: "Membre historique de la radio. Il participait aux animations et contribuait à faire connaître Radio Caprichos.",
+
     programTitle: "ESPRIT MUSICAL",
+    programSubtitle: "Entre souvenirs et nouvelle étape",
     classicTitle: "L’époque classique",
     classicText: "Reggaetón classique, salsa, bachata, cumbia, rock latino, mixes de DJs et chansons demandées par le chat.",
     futureTitle: "Le nouveau son",
     futureText: "Une radio entre le Pérou et la France, entre souvenirs, musique latine, culture et communauté.",
     djTitle: "Les voix de la radio",
-    djText: "Les DJs, animateurs et amis historiques auront leur place dans la mémoire de Radio Caprichos.",
+    djText: "Les DJs, animateurs, amis historiques et nouvelles voix auront leur place dans la mémoire de Radio Caprichos.",
+
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
 
@@ -208,34 +245,42 @@ const translations = {
     navMeetings: "Encuentros",
     navCommunity: "Comunidad",
     navContact: "Contacto",
+
     pageTitle: "LA <span>RADIO</span>",
     subtitle: "El corazón vivo de Radio Caprichos",
     intro: "Radio Caprichos nació para compartir música, saludos, recuerdos y voces venidas de distintos lugares.",
     btnPlayer: "Escuchar pronto",
     btnArchives: "Ver archivos",
+
     playerTitle: "REPRODUCTOR RADIO",
     playerSubtitle: "El streaming llegará próximamente",
-    streamTitle: "En construcción",
-    streamText: "El futuro reproductor de Radio Caprichos será añadido aquí cuando el servicio de streaming esté listo.",
+    playerStatus: "🔴 Fuera de línea",
+    streamTitle: "Player de prueba",
+    streamText: "El reproductor oficial será añadido aquí cuando el streaming esté listo. Por ahora, esta zona servirá para pruebas de audio y archivos sonoros.",
+    audioNote: "Ningún streaming oficial está activo todavía. El reproductor está reservado para pruebas.",
+
     statusTitle: "ESTADO DE LA RADIO",
     statusSubtitle: "Estado actual del proyecto",
-    offlineLabel: "🔴 Fuera de línea",
-    offlineTitle: "Streaming en preparación",
-    offlineText: "Radio Caprichos prepara actualmente su regreso. El reproductor audio y las primeras emisiones serán añadidos próximamente.",
+    offlineTitle: "Radio en preparación",
+    offlineText: "Radio Caprichos prepara actualmente su regreso. La web, los archivos, las cuñas históricas y el futuro streaming están en construcción.",
     nextTitle: "Primera emisión de prueba",
-    nextText: "Difusión de música latina, recuerdos de la época xat.com y presentación del proyecto Radio Caprichos 2026.",
+    nextText: "Una primera emisión de prueba podrá presentar música latina, recuerdos de la época xat.com y el proyecto Radio Caprichos 2026.",
+
     djsTitle: "DJS HISTÓRICOS",
     djsSubtitle: "Las voces que marcaron Radio Caprichos",
     franuitoText: "Creador de Radio Caprichos. Administrador, webmaster, locutor, DJ, técnico, moderador y gestor de la comunidad.",
     carlosText: "Amigo de escuela y fuente de inspiración. Sus mixes y su energía contribuyeron al nacimiento del proyecto.",
     puchiText: "Miembro histórico de la radio. Participaba en las animaciones y ayudaba a dar a conocer Radio Caprichos.",
+
     programTitle: "ESPÍRITU MUSICAL",
+    programSubtitle: "Entre recuerdos y una nueva etapa",
     classicTitle: "La época clásica",
     classicText: "Reggaetón clásico, salsa, bachata, cumbia, rock latino, mixes de DJs y canciones pedidas por el chat.",
     futureTitle: "El nuevo sonido",
     futureText: "Una radio entre Perú y Francia, entre recuerdos, música latina, cultura y comunidad.",
     djTitle: "Las voces de la radio",
-    djText: "Los DJs, locutores y amigos históricos tendrán su lugar en la memoria de Radio Caprichos.",
+    djText: "Los DJs, locutores, amigos históricos y nuevas voces tendrán su lugar en la memoria de Radio Caprichos.",
+
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
 };
