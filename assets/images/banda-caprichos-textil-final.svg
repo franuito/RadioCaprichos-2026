@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="320" viewBox="0 0 1920 320" role="img" aria-label="Banda Radio Caprichos">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8102e"/>
+      <stop offset="10%" stop-color="#ff3b00"/>
+      <stop offset="22%" stop-color="#ff9f00"/>
+      <stop offset="34%" stop-color="#f2d300"/>
+      <stop offset="46%" stop-color="#3abd33"/>
+      <stop offset="58%" stop-color="#00b4d8"/>
+      <stop offset="70%" stop-color="#0077ff"/>
+      <stop offset="82%" stop-color="#6633cc"/>
+      <stop offset="92%" stop-color="#c2187a"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7a4f00"/>
+      <stop offset="20%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#ffe28a"/>
+      <stop offset="80%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#7a4f00"/>
+    </linearGradient>
+
+    <pattern id="andeanDiamonds" width="112" height="132" patternUnits="userSpaceOnUse">
+      <path d="M56 10 L104 66 L56 122 L8 66 Z" fill="none" stroke="#040404" stroke-width="10" stroke-linejoin="miter"/>
+      <path d="M56 30 L86 66 L56 102 L26 66 Z" fill="none" stroke="#040404" stroke-width="8" stroke-linejoin="miter"/>
+      <path d="M36 66 H76 M56 44 V88" stroke="#040404" stroke-width="7" stroke-linecap="square"/>
+      <path d="M0 66 H18 M94 66 H112" stroke="#040404" stroke-width="7"/>
+    </pattern>
+
+    <filter id="softGlow" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <symbol id="mic" viewBox="0 0 100 100">
+      <rect x="36" y="10" width="28" height="52" rx="14" fill="none" stroke="url(#gold)" stroke-width="5"/>
+      <path d="M25 42 C25 68 75 68 75 42" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M50 70 V88" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M34 88 H66" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M42 22 H58 M42 32 H58 M42 42 H58" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M14 36 C6 48 6 62 14 74 M86 36 C94 48 94 62 86 74" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect width="1920" height="320" fill="#030303"/>
+
+  <!-- Top gold line -->
+  <rect x="0" y="5" width="1920" height="4" fill="url(#gold)" opacity="0.95"/>
+
+  <!-- Text panel -->
+  <rect x="0" y="10" width="1920" height="162" fill="#050505"/>
+  <rect x="0" y="170" width="1920" height="3" fill="url(#gold)" opacity="0.95"/>
+
+  <!-- Microphones -->
+  <use href="#mic" x="70" y="36" width="90" height="90"/>
+  <use href="#mic" x="1760" y="36" width="90" height="90"/>
+
+  <!-- Main text -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="18">
+    <text x="360" y="108" font-size="42" fill="#ff1e1e" filter="url(#softGlow)">UNA RADIO.</text>
+    <text x="760" y="108" font-size="42" fill="#f5f5f5" filter="url(#softGlow)">UNA COMUNIDAD.</text>
+    <text x="1310" y="108" font-size="42" fill="#0077c8" filter="url(#softGlow)">UNA FAMILIA.</text>
+  </g>
+
+  <!-- Rainbow woven band -->
+  <rect x="0" y="176" width="1920" height="112" fill="url(#rainbow)"/>
+  <rect x="0" y="176" width="1920" height="112" fill="url(#andeanDiamonds)"/>
+  <rect x="0" y="176" width="1920" height="3" fill="url(#gold)" opacity="0.9"/>
+  <rect x="0" y="286" width="1920" height="3" fill="url(#gold)" opacity="0.9"/>
+
+  <!-- Bottom dark breathing space -->
+  <rect x="0" y="289" width="1920" height="31" fill="#030303"/>
+</svg>
