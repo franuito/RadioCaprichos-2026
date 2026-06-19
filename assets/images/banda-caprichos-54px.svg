@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="54" viewBox="0 0 1920 54" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8102e"/>
+      <stop offset="14%" stop-color="#ff5b00"/>
+      <stop offset="28%" stop-color="#f2c300"/>
+      <stop offset="42%" stop-color="#1aa83a"/>
+      <stop offset="56%" stop-color="#00a0c8"/>
+      <stop offset="70%" stop-color="#0047ff"/>
+      <stop offset="84%" stop-color="#6b2bbf"/>
+      <stop offset="100%" stop-color="#c2187a"/>
+    </linearGradient>
+    <pattern id="andean" width="72" height="54" patternUnits="userSpaceOnUse">
+      <path d="M36 3 L64 27 L36 51 L8 27 Z" fill="none" stroke="#070707" stroke-width="7"/>
+      <path d="M36 14 L50 27 L36 40 L22 27 Z" fill="none" stroke="#070707" stroke-width="5"/>
+      <path d="M26 27 H46 M36 17 V37" stroke="#070707" stroke-width="4" stroke-linecap="square"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="54" fill="#050505"/>
+  <rect y="1" width="1920" height="52" fill="url(#rainbow)"/>
+  <rect y="1" width="1920" height="52" fill="url(#andean)"/>
+  <rect y="0" width="1920" height="1" fill="rgba(212,175,55,.85)"/>
+  <rect y="53" width="1920" height="1" fill="rgba(212,175,55,.85)"/>
+</svg>
