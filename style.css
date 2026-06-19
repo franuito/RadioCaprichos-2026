@@ -273,3 +273,21 @@ footer h3 {
     letter-spacing: 2px;
   }
 }
+
+/* ===================================== */
+/* BANDA CAPRICHOS */
+/* ===================================== */
+
+.banda-caprichos{
+  width:100%;
+  display:block;
+  margin:0;
+  padding:0;
+  border-top:1px solid rgba(212,175,55,.25);
+  border-bottom:1px solid rgba(212,175,55,.25);
+}
+
+.banda-caprichos img{
+  width:100%;
+  display:block;
+}
