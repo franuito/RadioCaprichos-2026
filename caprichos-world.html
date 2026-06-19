@@ -14,10 +14,12 @@
 
   <nav>
     <a href="index.html" data-i18n="navHome">Accueil</a>
+    <a href="radio.html" data-i18n="navRadio">Radio</a>
     <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
     <a href="galerie.html" data-i18n="navGallery">Galerie</a>
     <a href="archives.html" data-i18n="navArchives">Archives</a>
     <a href="caprichos-world.html">Caprichos World</a>
+    <a href="rencontres.html" data-i18n="navMeetings">Rencontres</a>
     <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
     <a href="contact.html" data-i18n="navContact">Contact</a>
 
@@ -39,22 +41,26 @@
     </div>
 
     <p class="text" data-i18n="intro">
-      Un espace pour découvrir des radios, des communautés musicales
-      et des projets qui relient les voix du monde.
+      Un espace pour relier les souvenirs du Pérou, la renaissance depuis les Landes
+      et les futures radios amies du monde.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
-  <h2 class="section-title" data-i18n="worldTitle">RADIOS DU MONDE</h2>
+  <h2 class="section-title" data-i18n="mapTitle">CARTE CAPRICHOS</h2>
+  <div class="section-subtitle" data-i18n="mapSubtitle">
+    Une communauté entre plusieurs mondes
+  </div>
 
   <div class="timeline">
 
     <div class="card">
       <div class="year">🇵🇪 Pérou</div>
-      <h3>Radio Caprichos</h3>
+      <h3>Villa El Salvador</h3>
       <p data-i18n="peruText">
-        Notre point de départ : Villa El Salvador, Lima, Pérou.
+        Le point de départ de Radio Caprichos : une chambre, un ordinateur,
+        de la musique et l’envie de créer une communauté.
       </p>
     </div>
 
@@ -62,16 +68,35 @@
       <div class="year">🇫🇷 France</div>
       <h3>Landes de France</h3>
       <p data-i18n="franceText">
-        Le lieu de renaissance du projet Radio Caprichos en 2026.
+        Le lieu de renaissance du projet en 2026, entre mémoire, famille,
+        technologie et nouvelle étape.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">🇲🇽 Mexique</div>
+      <h3 data-i18n="mexicoTitle">Communautés latines</h3>
+      <p data-i18n="mexicoText">
+        Les chats et radios latines ont inspiré l’idée de relier radio, musique,
+        demandes de chansons et conversations en direct.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">🇪🇸 Espagne</div>
+      <h3 data-i18n="spainTitle">Pont culturel</h3>
+      <p data-i18n="spainText">
+        Un espace naturel entre l’Europe et l’Amérique latine, dans l’esprit bilingue
+        de Radio Caprichos.
       </p>
     </div>
 
     <div class="card">
       <div class="year">🌎 Monde</div>
-      <h3 data-i18n="soonTitle">Radios amies</h3>
-      <p data-i18n="soonText">
-        Bientôt, cette page accueillera des radios latines, des communautés amies
-        et des projets musicaux du monde entier.
+      <h3 data-i18n="worldTitle">Radios amies</h3>
+      <p data-i18n="worldText">
+        Cette section accueillera plus tard des radios, communautés et projets musicaux
+        qui partagent le même esprit de connexion.
       </p>
     </div>
 
@@ -80,7 +105,17 @@
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
-  <p data-i18n="footerSlogan">Des Andes du Pérou aux Landes de France</p>
+
+  <p data-i18n="footerSlogan">
+    Des Andes du Pérou aux Landes de France
+  </p>
+
+  <div class="footer-tags">
+    <span>📻 Radio</span>
+    <span>🌎 Communauté</span>
+    <span>🦅 Mémoire</span>
+  </div>
+
   <small>© 2008 - 2026 Radio Caprichos</small>
 </footer>
 
@@ -88,35 +123,63 @@
 const translations = {
   fr: {
     navHome: "Accueil",
+    navRadio: "Radio",
     navPioneers: "Pionniers",
     navGallery: "Galerie",
     navArchives: "Archives",
+    navMeetings: "Rencontres",
     navCommunity: "Communauté",
     navContact: "Contact",
+
     subtitle: "Les radios et communautés qui nous inspirent",
-    intro: "Un espace pour découvrir des radios, des communautés musicales et des projets qui relient les voix du monde.",
-    worldTitle: "RADIOS DU MONDE",
-    peruText: "Notre point de départ : Villa El Salvador, Lima, Pérou.",
-    franceText: "Le lieu de renaissance du projet Radio Caprichos en 2026.",
-    soonTitle: "Radios amies",
-    soonText: "Bientôt, cette page accueillera des radios latines, des communautés amies et des projets musicaux du monde entier.",
+    intro: "Un espace pour relier les souvenirs du Pérou, la renaissance depuis les Landes et les futures radios amies du monde.",
+
+    mapTitle: "CARTE CAPRICHOS",
+    mapSubtitle: "Une communauté entre plusieurs mondes",
+
+    peruText: "Le point de départ de Radio Caprichos : une chambre, un ordinateur, de la musique et l’envie de créer une communauté.",
+    franceText: "Le lieu de renaissance du projet en 2026, entre mémoire, famille, technologie et nouvelle étape.",
+
+    mexicoTitle: "Communautés latines",
+    mexicoText: "Les chats et radios latines ont inspiré l’idée de relier radio, musique, demandes de chansons et conversations en direct.",
+
+    spainTitle: "Pont culturel",
+    spainText: "Un espace naturel entre l’Europe et l’Amérique latine, dans l’esprit bilingue de Radio Caprichos.",
+
+    worldTitle: "Radios amies",
+    worldText: "Cette section accueillera plus tard des radios, communautés et projets musicaux qui partagent le même esprit de connexion.",
+
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
 
   es: {
     navHome: "Inicio",
+    navRadio: "Radio",
     navPioneers: "Pioneros",
     navGallery: "Galería",
     navArchives: "Archivos",
+    navMeetings: "Encuentros",
     navCommunity: "Comunidad",
     navContact: "Contacto",
+
     subtitle: "Las radios y comunidades que nos inspiran",
-    intro: "Un espacio para descubrir radios, comunidades musicales y proyectos que conectan las voces del mundo.",
-    worldTitle: "RADIOS DEL MUNDO",
-    peruText: "Nuestro punto de partida: Villa El Salvador, Lima, Perú.",
-    franceText: "El lugar donde renace el proyecto Radio Caprichos en 2026.",
-    soonTitle: "Radios amigas",
-    soonText: "Pronto, esta página reunirá radios latinas, comunidades amigas y proyectos musicales del mundo entero.",
+    intro: "Un espacio para conectar los recuerdos del Perú, el renacimiento desde las Landes y las futuras radios amigas del mundo.",
+
+    mapTitle: "MAPA CAPRICHOS",
+    mapSubtitle: "Una comunidad entre varios mundos",
+
+    peruText: "El punto de partida de Radio Caprichos: una habitación, una computadora, música y las ganas de crear una comunidad.",
+    franceText: "El lugar donde renace el proyecto en 2026, entre memoria, familia, tecnología y una nueva etapa.",
+
+    mexicoTitle: "Comunidades latinas",
+    mexicoText: "Los chats y radios latinas inspiraron la idea de conectar radio, música, pedidos de canciones y conversaciones en directo.",
+
+    spainTitle: "Puente cultural",
+    spainText: "Un espacio natural entre Europa y América Latina, dentro del espíritu bilingüe de Radio Caprichos.",
+
+    worldTitle: "Radios amigas",
+    worldText: "Esta sección recibirá más adelante radios, comunidades y proyectos musicales que compartan el mismo espíritu de conexión.",
+
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
 };
