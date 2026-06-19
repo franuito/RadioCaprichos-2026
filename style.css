@@ -277,16 +277,35 @@ footer h3 {
 /* ===================================== */
 /* BANDA CAPRICHOS */
 /* ===================================== */
+
 .banda-caprichos{
+  width:100%;
   text-align:center;
   padding:20px 0;
+  margin:0;
   border-top:1px solid rgba(212,175,55,.25);
   border-bottom:1px solid rgba(212,175,55,.25);
+  background:#050505;
 }
 
 .banda-caprichos img{
   width:100%;
-  max-width:900px;
+  max-width:800px;
   height:auto;
   display:inline-block;
+  border-radius:6px;
+}
+
+/* Version mobile */
+
+@media(max-width:768px){
+
+  .banda-caprichos{
+    padding:10px 0;
+  }
+
+  .banda-caprichos img{
+    max-width:95%;
+  }
+
 }
