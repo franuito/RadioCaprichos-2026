@@ -14,8 +14,12 @@
 
   <nav>
     <a href="index.html" data-i18n="navHome">Accueil</a>
+    <a href="radio.html" data-i18n="navRadio">Radio</a>
     <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
     <a href="galerie.html" data-i18n="navGallery">Galerie</a>
+    <a href="archives.html" data-i18n="navArchives">Archives</a>
+    <a href="caprichos-world.html">Caprichos World</a>
+    <a href="rencontres.html" data-i18n="navMeetings">Rencontres</a>
     <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
     <a href="contact.html" data-i18n="navContact">Contact</a>
 
@@ -28,49 +32,53 @@
 
 <section class="hero">
   <div>
-    <div class="condor">🦅</div>
+    <div class="condor">📬📻</div>
 
     <h1 data-i18n-html="pageTitle">CONTACT <span>RADIO</span></h1>
 
     <div class="slogan" data-i18n="subtitle">
-      Le retour de Radio Caprichos est en construction
+      Restons en contact
     </div>
 
     <p class="text" data-i18n="intro">
-      Une histoire née à Villa El Salvador et qui renaît aujourd’hui depuis les Landes de France.
+      Radio Caprichos continue son voyage entre le Pérou et la France.
+      Cette page permettra bientôt de contacter l’équipe et la communauté.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
-  <h2 class="section-title" data-i18n="contactTitle">NOUS CONTACTER</h2>
+  <h2 class="section-title" data-i18n="sectionTitle">NOUS CONTACTER</h2>
+  <div class="section-subtitle" data-i18n="sectionSubtitle">
+    Le projet est en construction
+  </div>
 
   <div class="timeline">
 
     <div class="card">
-      <div class="year">📻 Radio Caprichos</div>
-      <h3 data-i18n="projectTitle">Projet en développement</h3>
+      <div class="year">📻</div>
+      <h3 data-i18n="projectTitle">Projet Radio Caprichos</h3>
       <p data-i18n="projectText">
-        Le site, la mémoire historique, la communauté et le futur streaming de Radio Caprichos
-        sont actuellement en préparation.
+        La radio est actuellement en phase de reconstruction.
+        Le site web, les archives et les futurs services sont en préparation.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">🌎 Communauté</div>
-      <h3 data-i18n="communityTitle">Une radio entre deux mondes</h3>
-      <p data-i18n="communityText">
-        Radio Caprichos relie les souvenirs du Pérou, les Landes de France
-        et les communautés latines qui ont grandi avec Internet.
+      <div class="year">🌎</div>
+      <h3 data-i18n="worldTitle">Entre deux continents</h3>
+      <p data-i18n="worldText">
+        Radio Caprichos relie aujourd’hui les souvenirs de Villa El Salvador
+        aux Landes de France.
       </p>
     </div>
 
     <div class="card">
-      <div class="year">🚧 Prochainement</div>
-      <h3 data-i18n="soonTitle">Réseaux et formulaire</h3>
+      <div class="year">🚧</div>
+      <h3 data-i18n="soonTitle">À venir</h3>
       <p data-i18n="soonText">
-        Les liens vers les réseaux sociaux, le formulaire de contact et les futures plateformes
-        de la radio seront ajoutés prochainement.
+        Formulaire de contact, réseaux sociaux, streaming et nouvelles fonctionnalités
+        seront ajoutés prochainement.
       </p>
     </div>
 
@@ -79,7 +87,17 @@
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
-  <p data-i18n="footerSlogan">Des Andes du Pérou aux Landes de France</p>
+
+  <p data-i18n="footerSlogan">
+    Des Andes du Pérou aux Landes de France
+  </p>
+
+  <div class="footer-tags">
+    <span>📻 Radio</span>
+    <span>🌎 Communauté</span>
+    <span>🦅 Mémoire</span>
+  </div>
+
   <small>© 2008 - 2026 Radio Caprichos</small>
 </footer>
 
@@ -87,39 +105,59 @@
 const translations = {
   fr: {
     navHome: "Accueil",
+    navRadio: "Radio",
     navPioneers: "Pionniers",
     navGallery: "Galerie",
+    navArchives: "Archives",
+    navMeetings: "Rencontres",
     navCommunity: "Communauté",
     navContact: "Contact",
+
     pageTitle: "CONTACT <span>RADIO</span>",
-    subtitle: "Le retour de Radio Caprichos est en construction",
-    intro: "Une histoire née à Villa El Salvador et qui renaît aujourd’hui depuis les Landes de France.",
-    contactTitle: "NOUS CONTACTER",
-    projectTitle: "Projet en développement",
-    projectText: "Le site, la mémoire historique, la communauté et le futur streaming de Radio Caprichos sont actuellement en préparation.",
-    communityTitle: "Une radio entre deux mondes",
-    communityText: "Radio Caprichos relie les souvenirs du Pérou, les Landes de France et les communautés latines qui ont grandi avec Internet.",
-    soonTitle: "Réseaux et formulaire",
-    soonText: "Les liens vers les réseaux sociaux, le formulaire de contact et les futures plateformes de la radio seront ajoutés prochainement.",
+    subtitle: "Restons en contact",
+    intro: "Radio Caprichos continue son voyage entre le Pérou et la France. Cette page permettra bientôt de contacter l’équipe et la communauté.",
+
+    sectionTitle: "NOUS CONTACTER",
+    sectionSubtitle: "Le projet est en construction",
+
+    projectTitle: "Projet Radio Caprichos",
+    projectText: "La radio est actuellement en phase de reconstruction. Le site web, les archives et les futurs services sont en préparation.",
+
+    worldTitle: "Entre deux continents",
+    worldText: "Radio Caprichos relie aujourd’hui les souvenirs de Villa El Salvador aux Landes de France.",
+
+    soonTitle: "À venir",
+    soonText: "Formulaire de contact, réseaux sociaux, streaming et nouvelles fonctionnalités seront ajoutés prochainement.",
+
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
 
   es: {
     navHome: "Inicio",
+    navRadio: "Radio",
     navPioneers: "Pioneros",
     navGallery: "Galería",
+    navArchives: "Archivos",
+    navMeetings: "Encuentros",
     navCommunity: "Comunidad",
     navContact: "Contacto",
+
     pageTitle: "CONTACTO <span>RADIO</span>",
-    subtitle: "El regreso de Radio Caprichos está en construcción",
-    intro: "Una historia nacida en Villa El Salvador y que renace hoy desde las Landes de Francia.",
-    contactTitle: "CONTACTO",
-    projectTitle: "Proyecto en desarrollo",
-    projectText: "La web, la memoria histórica, la comunidad y el futuro streaming de Radio Caprichos están actualmente en preparación.",
-    communityTitle: "Una radio entre dos mundos",
-    communityText: "Radio Caprichos conecta los recuerdos del Perú, las Landes de Francia y las comunidades latinas que crecieron con Internet.",
-    soonTitle: "Redes y formulario",
-    soonText: "Los enlaces hacia redes sociales, el formulario de contacto y las futuras plataformas de la radio serán añadidos próximamente.",
+    subtitle: "Mantengámonos en contacto",
+    intro: "Radio Caprichos continúa su viaje entre Perú y Francia. Esta página permitirá próximamente contactar al equipo y a la comunidad.",
+
+    sectionTitle: "CONTACTO",
+    sectionSubtitle: "El proyecto está en construcción",
+
+    projectTitle: "Proyecto Radio Caprichos",
+    projectText: "La radio se encuentra actualmente en fase de reconstrucción. La web, los archivos y los futuros servicios están en preparación.",
+
+    worldTitle: "Entre dos continentes",
+    worldText: "Radio Caprichos conecta hoy los recuerdos de Villa El Salvador con las Landes de Francia.",
+
+    soonTitle: "Próximamente",
+    soonText: "Formulario de contacto, redes sociales, streaming y nuevas funcionalidades serán añadidas próximamente.",
+
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
 };
