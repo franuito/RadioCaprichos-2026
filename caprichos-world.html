@@ -37,18 +37,19 @@
     <h1>CAPRICHOS <span>WORLD</span></h1>
 
     <div class="slogan" data-i18n="subtitle">
-      Les radios et communautés qui nous inspirent
+      La carte émotionnelle de Radio Caprichos
     </div>
 
     <p class="text" data-i18n="intro">
-      Un espace pour relier les souvenirs du Pérou, la renaissance depuis les Landes
-      et les futures radios amies du monde.
+      Un espace pour relier les souvenirs du Pérou, les communautés latines,
+      la renaissance depuis les Landes et les futures radios amies du monde.
     </p>
   </div>
 </section>
 
 <section class="dark-section">
   <h2 class="section-title" data-i18n="mapTitle">CARTE CAPRICHOS</h2>
+
   <div class="section-subtitle" data-i18n="mapSubtitle">
     Une communauté entre plusieurs mondes
   </div>
@@ -57,7 +58,7 @@
 
     <div class="card">
       <div class="year">🇵🇪 Pérou</div>
-      <h3>Villa El Salvador</h3>
+      <h3>Villa El Salvador · Lima</h3>
       <p data-i18n="peruText">
         Le point de départ de Radio Caprichos : une chambre, un ordinateur,
         de la musique et l’envie de créer une communauté.
@@ -66,7 +67,7 @@
 
     <div class="card">
       <div class="year">🇫🇷 France</div>
-      <h3>Landes de France</h3>
+      <h3>Landes · Côte Basque</h3>
       <p data-i18n="franceText">
         Le lieu de renaissance du projet en 2026, entre mémoire, famille,
         technologie et nouvelle étape.
@@ -79,6 +80,15 @@
       <p data-i18n="mexicoText">
         Les chats et radios latines ont inspiré l’idée de relier radio, musique,
         demandes de chansons et conversations en direct.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">🇺🇸 États-Unis</div>
+      <h3 data-i18n="usaTitle">Auditeurs latinos</h3>
+      <p data-i18n="usaText">
+        Les communautés latines connectées depuis différents pays faisaient partie
+        de cette nouvelle façon de vivre la radio sur Internet.
       </p>
     </div>
 
@@ -102,9 +112,36 @@
 
   </div>
 </section>
-<div class="banda-caprichos">
-  <img src="assets/images/banda-caprichos.png" alt="Banda Caprichos">
-</div>
+
+<section class="dark-section">
+  <h2 class="section-title" data-i18n="futureTitle">PROCHAINE ÉTAPE</h2>
+
+  <div class="section-subtitle" data-i18n="futureSubtitle">
+    Vers une carte interactive
+  </div>
+
+  <div class="timeline">
+
+    <div class="card">
+      <div class="year">🗺️</div>
+      <h3 data-i18n="mapFutureTitle">Caprichos World interactif</h3>
+      <p data-i18n="mapFutureText">
+        Plus tard, cette page pourra devenir une carte interactive inspirée de l’esprit Radio Garden,
+        avec les pays, les radios amies et les souvenirs de la communauté.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="year">📻</div>
+      <h3 data-i18n="radioFutureTitle">Radios et communautés amies</h3>
+      <p data-i18n="radioFutureText">
+        Radio Caprichos pourra y référencer des projets musicaux, des radios latines
+        et des communautés qui partagent la même passion.
+      </p>
+    </div>
+
+  </div>
+</section>
 
 <footer>
   <h3>RADIO CAPRICHOS</h3>
@@ -134,8 +171,8 @@ const translations = {
     navCommunity: "Communauté",
     navContact: "Contact",
 
-    subtitle: "Les radios et communautés qui nous inspirent",
-    intro: "Un espace pour relier les souvenirs du Pérou, la renaissance depuis les Landes et les futures radios amies du monde.",
+    subtitle: "La carte émotionnelle de Radio Caprichos",
+    intro: "Un espace pour relier les souvenirs du Pérou, les communautés latines, la renaissance depuis les Landes et les futures radios amies du monde.",
 
     mapTitle: "CARTE CAPRICHOS",
     mapSubtitle: "Une communauté entre plusieurs mondes",
@@ -146,11 +183,23 @@ const translations = {
     mexicoTitle: "Communautés latines",
     mexicoText: "Les chats et radios latines ont inspiré l’idée de relier radio, musique, demandes de chansons et conversations en direct.",
 
+    usaTitle: "Auditeurs latinos",
+    usaText: "Les communautés latines connectées depuis différents pays faisaient partie de cette nouvelle façon de vivre la radio sur Internet.",
+
     spainTitle: "Pont culturel",
     spainText: "Un espace naturel entre l’Europe et l’Amérique latine, dans l’esprit bilingue de Radio Caprichos.",
 
     worldTitle: "Radios amies",
     worldText: "Cette section accueillera plus tard des radios, communautés et projets musicaux qui partagent le même esprit de connexion.",
+
+    futureTitle: "PROCHAINE ÉTAPE",
+    futureSubtitle: "Vers une carte interactive",
+
+    mapFutureTitle: "Caprichos World interactif",
+    mapFutureText: "Plus tard, cette page pourra devenir une carte interactive inspirée de l’esprit Radio Garden, avec les pays, les radios amies et les souvenirs de la communauté.",
+
+    radioFutureTitle: "Radios et communautés amies",
+    radioFutureText: "Radio Caprichos pourra y référencer des projets musicaux, des radios latines et des communautés qui partagent la même passion.",
 
     footerSlogan: "Des Andes du Pérou aux Landes de France"
   },
@@ -165,8 +214,8 @@ const translations = {
     navCommunity: "Comunidad",
     navContact: "Contacto",
 
-    subtitle: "Las radios y comunidades que nos inspiran",
-    intro: "Un espacio para conectar los recuerdos del Perú, el renacimiento desde las Landes y las futuras radios amigas del mundo.",
+    subtitle: "El mapa emocional de Radio Caprichos",
+    intro: "Un espacio para conectar los recuerdos del Perú, las comunidades latinas, el renacimiento desde las Landes y las futuras radios amigas del mundo.",
 
     mapTitle: "MAPA CAPRICHOS",
     mapSubtitle: "Una comunidad entre varios mundos",
@@ -177,11 +226,23 @@ const translations = {
     mexicoTitle: "Comunidades latinas",
     mexicoText: "Los chats y radios latinas inspiraron la idea de conectar radio, música, pedidos de canciones y conversaciones en directo.",
 
+    usaTitle: "Oyentes latinos",
+    usaText: "Las comunidades latinas conectadas desde distintos países formaban parte de esta nueva manera de vivir la radio por Internet.",
+
     spainTitle: "Puente cultural",
     spainText: "Un espacio natural entre Europa y América Latina, dentro del espíritu bilingüe de Radio Caprichos.",
 
     worldTitle: "Radios amigas",
     worldText: "Esta sección recibirá más adelante radios, comunidades y proyectos musicales que compartan el mismo espíritu de conexión.",
+
+    futureTitle: "PRÓXIMA ETAPA",
+    futureSubtitle: "Hacia un mapa interactivo",
+
+    mapFutureTitle: "Caprichos World interactivo",
+    mapFutureText: "Más adelante, esta página podrá convertirse en un mapa interactivo inspirado en el espíritu de Radio Garden, con países, radios amigas y recuerdos de la comunidad.",
+
+    radioFutureTitle: "Radios y comunidades amigas",
+    radioFutureText: "Radio Caprichos podrá referenciar proyectos musicales, radios latinas y comunidades que compartan la misma pasión.",
 
     footerSlogan: "De los Andes del Perú a las Landes de Francia"
   }
