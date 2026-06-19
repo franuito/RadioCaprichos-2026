@@ -1,50 +1,197 @@
-🌎 COMMUNAUTÉ
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communauté - Radio Caprichos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-━━━━━━━━━━━━━━━━━━━━
+<body>
 
-1. LA COMMUNAUTÉ RADIO CAPRICHOS
+<header>
+  <div class="brand">RADIO CAPRICHOS</div>
 
-[Texte à compléter plus tard]
+  <nav>
+    <a href="index.html" data-i18n="navHome">Accueil</a>
+    <a href="radio.html" data-i18n="navRadio">Radio</a>
+    <a href="pionniers.html" data-i18n="navPioneers">Pionniers</a>
+    <a href="galerie.html" data-i18n="navGallery">Galerie</a>
+    <a href="archives.html" data-i18n="navArchives">Archives</a>
+    <a href="caprichos-world.html">Caprichos World</a>
+    <a href="rencontres.html" data-i18n="navMeetings">Rencontres</a>
+    <a href="communaute.html" data-i18n="navCommunity">Communauté</a>
+    <a href="contact.html" data-i18n="navContact">Contact</a>
 
-━━━━━━━━━━━━━━━━━━━━
+    <span class="lang">
+      <button onclick="setLang('fr')" id="btn-fr" class="active">FR</button>
+      <button onclick="setLang('es')" id="btn-es">ES</button>
+    </span>
+  </nav>
+</header>
 
-2. LES SALUTATIONS ET LES SOUVENIRS
+<section class="hero">
+  <div>
+    <div class="condor">🌎🤝</div>
 
-[Texte à compléter plus tard]
+    <h1 data-i18n-html="pageTitle">LA <span>COMMUNAUTÉ</span></h1>
 
-━━━━━━━━━━━━━━━━━━━━
+    <div class="slogan" data-i18n="subtitle">
+      Le cœur humain de Radio Caprichos
+    </div>
 
-3. NOS AUDITEURS À TRAVERS LE MONDE
+    <p class="text" data-i18n="intro">
+      Radio Caprichos n’était pas seulement une radio. C’était un point de rencontre,
+      un espace d’amitié, de musique et de souvenirs partagés.
+    </p>
+  </div>
+</section>
 
-🌎 Pérou
-🌎 Mexique
-🌎 Chili
-🌎 Argentine
-🌎 Espagne
-🌎 États-Unis
+<section class="dark-section">
+  <h2 class="section-title" data-i18n="sectionTitle">UNE FAMILLE NÉE SUR INTERNET</h2>
+  <div class="section-subtitle" data-i18n="sectionSubtitle">Avant les réseaux sociaux modernes</div>
 
-[Texte à compléter plus tard]
+  <div class="timeline">
 
-━━━━━━━━━━━━━━━━━━━━
+    <div class="card">
+      <div class="year">💬 xat.com</div>
+      <h3 data-i18n="xatTitle">Le chat comme maison</h3>
+      <p data-i18n="xatText">
+        Le chat était le lieu où tout se passait : les salutations, les demandes de chansons,
+        les conversations, les amitiés et les longues nuits passées avec les DJs.
+      </p>
+    </div>
 
-4. L'ÉPOQUE XAT.COM
+    <div class="card">
+      <div class="year">📻 Radio</div>
+      <h3 data-i18n="radioTitle">Écouter ensemble</h3>
+      <p data-i18n="radioText">
+        Les auditeurs ne faisaient pas qu’écouter la musique. Ils participaient,
+        écrivaient au DJ, demandaient des titres et faisaient vivre la programmation.
+      </p>
+    </div>
 
-[Captures futures]
+    <div class="card">
+      <div class="year">🌎 Monde</div>
+      <h3 data-i18n="worldTitle">Des amis sans frontières</h3>
+      <p data-i18n="worldText">
+        Les communautés de radio en ligne réunissaient des personnes du Pérou,
+        d’Amérique latine, d’Europe et d’autres pays, bien avant Discord et TikTok.
+      </p>
+    </div>
 
-[Texte à compléter plus tard]
+    <div class="card">
+      <div class="year">❤️ Souvenirs</div>
+      <h3 data-i18n="memoryTitle">Des pseudos devenus des visages</h3>
+      <p data-i18n="memoryText">
+        Certaines amitiés nées sur Internet ont dépassé l’écran. Les discussions,
+        les rencontres et les événements ont transformé la radio en véritable communauté.
+      </p>
+    </div>
 
-━━━━━━━━━━━━━━━━━━━━
+  </div>
+</section>
 
-5. RADIO CAPRICHOS AUJOURD'HUI
+<footer>
+  <h3>RADIO CAPRICHOS</h3>
 
-Depuis les Landes de France,
-Radio Caprichos renaît pour préserver
-une histoire commencée en 2008.
+  <p data-i18n="footerSlogan">
+    Des Andes du Pérou aux Landes de France
+  </p>
 
-━━━━━━━━━━━━━━━━━━━━
+  <div class="footer-tags">
+    <span>📻 Radio</span>
+    <span>🌎 Communauté</span>
+    <span>🦅 Mémoire</span>
+  </div>
 
-6. RADIO CAPRICHOS AROUND THE WORLD
+  <small>© 2008 - 2026 Radio Caprichos</small>
+</footer>
 
-🚧 En développement
+<script>
+const translations = {
+  fr: {
+    navHome: "Accueil",
+    navRadio: "Radio",
+    navPioneers: "Pionniers",
+    navGallery: "Galerie",
+    navArchives: "Archives",
+    navMeetings: "Rencontres",
+    navCommunity: "Communauté",
+    navContact: "Contact",
 
-Inspiré par Radio Garden.
+    pageTitle: "LA <span>COMMUNAUTÉ</span>",
+    subtitle: "Le cœur humain de Radio Caprichos",
+    intro: "Radio Caprichos n’était pas seulement une radio. C’était un point de rencontre, un espace d’amitié, de musique et de souvenirs partagés.",
+
+    sectionTitle: "UNE FAMILLE NÉE SUR INTERNET",
+    sectionSubtitle: "Avant les réseaux sociaux modernes",
+
+    xatTitle: "Le chat comme maison",
+    xatText: "Le chat était le lieu où tout se passait : les salutations, les demandes de chansons, les conversations, les amitiés et les longues nuits passées avec les DJs.",
+
+    radioTitle: "Écouter ensemble",
+    radioText: "Les auditeurs ne faisaient pas qu’écouter la musique. Ils participaient, écrivaient au DJ, demandaient des titres et faisaient vivre la programmation.",
+
+    worldTitle: "Des amis sans frontières",
+    worldText: "Les communautés de radio en ligne réunissaient des personnes du Pérou, d’Amérique latine, d’Europe et d’autres pays, bien avant Discord et TikTok.",
+
+    memoryTitle: "Des pseudos devenus des visages",
+    memoryText: "Certaines amitiés nées sur Internet ont dépassé l’écran. Les discussions, les rencontres et les événements ont transformé la radio en véritable communauté.",
+
+    footerSlogan: "Des Andes du Pérou aux Landes de France"
+  },
+
+  es: {
+    navHome: "Inicio",
+    navRadio: "Radio",
+    navPioneers: "Pioneros",
+    navGallery: "Galería",
+    navArchives: "Archivos",
+    navMeetings: "Encuentros",
+    navCommunity: "Comunidad",
+    navContact: "Contacto",
+
+    pageTitle: "LA <span>COMUNIDAD</span>",
+    subtitle: "El corazón humano de Radio Caprichos",
+    intro: "Radio Caprichos no era solamente una radio. Era un punto de encuentro, un espacio de amistad, música y recuerdos compartidos.",
+
+    sectionTitle: "UNA FAMILIA NACIDA EN INTERNET",
+    sectionSubtitle: "Antes de las redes sociales modernas",
+
+    xatTitle: "El chat como casa",
+    xatText: "El chat era el lugar donde todo pasaba: los saludos, los pedidos de canciones, las conversaciones, las amistades y las largas noches compartidas con los DJs.",
+
+    radioTitle: "Escuchar juntos",
+    radioText: "Los oyentes no solo escuchaban música. Participaban, escribían al DJ, pedían temas y hacían vivir la programación.",
+
+    worldTitle: "Amigos sin fronteras",
+    worldText: "Las comunidades de radio online reunían personas de Perú, América Latina, Europa y otros países, mucho antes de Discord y TikTok.",
+
+    memoryTitle: "Apodos que se volvieron rostros",
+    memoryText: "Algunas amistades nacidas en Internet pasaron más allá de la pantalla. Las conversaciones, los encuentros y los eventos transformaron la radio en una verdadera comunidad.",
+
+    footerSlogan: "De los Andes del Perú a las Landes de Francia"
+  }
+};
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    el.textContent = translations[lang][key];
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const key = el.getAttribute("data-i18n-html");
+    el.innerHTML = translations[lang][key];
+  });
+
+  document.getElementById("btn-fr").classList.toggle("active", lang === "fr");
+  document.getElementById("btn-es").classList.toggle("active", lang === "es");
+}
+</script>
+
+</body>
+</html>
