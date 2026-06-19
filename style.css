@@ -273,39 +273,35 @@ footer h3 {
     letter-spacing: 2px;
   }
 }
-
 /* ===================================== */
 /* BANDA CAPRICHOS */
 /* ===================================== */
 
 .banda-caprichos{
   width:100%;
-  text-align:center;
-  padding:20px 0;
   margin:0;
+  padding:0;
   border-top:1px solid rgba(212,175,55,.25);
   border-bottom:1px solid rgba(212,175,55,.25);
   background:#050505;
+  text-align:center;
 }
 
 .banda-caprichos img{
   width:100%;
-  max-width:600px;
+  max-width:1400px;
   height:auto;
-  display:inline-block;
-  border-radius:6px;
+  display:block;
+  margin:auto;
 }
 
-/* Version mobile */
+/* Mobile */
 
 @media(max-width:768px){
 
-  .banda-caprichos{
-    padding:10px 0;
-  }
-
   .banda-caprichos img{
-    max-width:95%;
+    width:100%;
+    max-width:100%;
   }
 
 }
